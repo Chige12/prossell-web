@@ -6,14 +6,10 @@
         prossell-web
       </h1>
       <h2 class="subtitle">
-        My spectacular Nuxt.js project
+        My remarkable Nuxt.js project
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
           Documentation
         </a>
         <a

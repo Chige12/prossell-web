@@ -1,6 +1,6 @@
 # prossell-web
 
-> My spectacular Nuxt.js project
+> My remarkable Nuxt.js project
 
 ## Build Setup
 
