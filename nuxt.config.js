@@ -40,7 +40,7 @@ export default {
    */
   modules: ['@nuxtjs/style-resources'],
   styleResources: {
-    scss: [],
+    scss: ['~/assets/scss/variables.scss'],
     less: [],
     stylus: []
   },
