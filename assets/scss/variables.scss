@@ -1,1 +1,26 @@
-$-subtitle: red;
+
+//colors
+  $theme-blue: #89c9c9;
+  $grad-blue: #9ed7b0;
+  $grad-green: #c3f184;
+  $theme-green: #d8ff6c;
+  $theme-gradient: inear-gradient(60deg, $theme-green 0%, $theme-blue 100%);
+  $link: #527e7f;
+
+  $white: #fff;
+  $light-gray: #f3f3f3;
+  $gray: #8e8e8e;
+  $dim-gray: #555555;
+  $black: #0e0f0d;
+
+  //text color
+  $black-txt: $black;
+  $gray-txt: $dim-gray;
+  $link-txt: $link;
+  $notes-txt: $gray;
+
+  //sns color
+  $twitter: #1da1f2;
+  $facebook: #4267b2;
+
+//fonts
