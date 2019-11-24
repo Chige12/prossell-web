@@ -36,17 +36,15 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: $PT-sans;
   display: block;
-  font-weight: 300;
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
 }
 
 .subtitle {
-  font-weight: 300;
+  font-weight: $weight-thin;
   font-size: 42px;
   color: $theme-blue;
   word-spacing: 5px;

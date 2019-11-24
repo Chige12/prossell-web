@@ -67,11 +67,21 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources', 'nuxt-webfontloader'],
   styleResources: {
     scss: ['~/assets/scss/variables.scss'],
     less: [],
     stylus: []
+  },
+  webfontloader: {
+    // add Google Fonts as "custom" | workaround required
+    custom: {
+      families: ['Noto Sans JP:n1,n4', 'PT Sans:n7i'],
+      urls: [
+        'https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,400&display=swap',
+        'https://fonts.googleapis.com/css?family=PT+Sans:700i&display=swap'
+      ]
+    }
   },
   /*
    ** Build configuration
