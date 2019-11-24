@@ -12,9 +12,10 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@nuxtjs/svg": "^0.1.6",
     "nuxt": "^2.0.0",
-    "nuxt-webfontloader": "^1.1.0",
-    "nuxt-mq": "^2.0.1"
+    "nuxt-mq": "^2.0.1",
+    "nuxt-webfontloader": "^1.1.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^1.0.1",

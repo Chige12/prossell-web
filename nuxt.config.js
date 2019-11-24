@@ -67,7 +67,12 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/style-resources', 'nuxt-webfontloader', ['nuxt-mq']],
+  modules: [
+    '@nuxtjs/style-resources',
+    'nuxt-webfontloader',
+    ['nuxt-mq'],
+    '@nuxtjs/svg'
+  ],
   styleResources: {
     scss: ['~/assets/scss/variables.scss'],
     less: [],
