@@ -1,18 +1,47 @@
 export default {
   mode: 'universal',
-  /*
-   ** Headers of the page
-   */
+  htmlAttrs: {
+    prefix: 'og: http://ogp.me/ns#'
+  },
+  titleTemplate: '%s - ONLINE INTERN CONTEST 2020',
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'ONLINE INTERN CONTEST 2020',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content:
+          'ビジネスコンテスト×インターンシップ。全く新しいオンラインコンテスト。参加学生でチームを結成し、企業からの課題テーマに取り組め！ 1月11日応募締切。#オンコン'
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'ONLINE INTERN CONTEST 2020'
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://prossell.jp' },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'ONLINE INTERN CONTEST 2020'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'ビジネスコンテスト×インターンシップ。全く新しいオンラインコンテスト。参加学生でチームを結成し、企業からの課題テーマに取り組め！ 1月11日応募締切。#オンコン'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://prossell.jp/img/OGP.png'
       }
+      // { property: 'article:publisher', content: 'FacebookURL' },
+      // { property: 'fb:app_id', content: 'FacebookAppID' },
+      // { name: 'twitter:card', content: 'summary' },
+      // { name: 'twitter:site', content: '@Twitter' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
@@ -38,11 +67,25 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/style-resources', ['nuxt-mq']],
+  modules: [
+    '@nuxtjs/style-resources', 
+    'nuxt-webfontloader',
+    ['nuxt-mq']
+  ],
   styleResources: {
     scss: ['~/assets/scss/variables.scss'],
     less: [],
     stylus: []
+  },
+  webfontloader: {
+    // add Google Fonts as "custom" | workaround required
+    custom: {
+      families: ['Noto Sans JP:n1,n4', 'PT Sans:n7i'],
+      urls: [
+        'https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,400&display=swap',
+        'https://fonts.googleapis.com/css?family=PT+Sans:700i&display=swap'
+      ]
+    }
   },
   mq: {
     defaultBreakpoint: 'default',
