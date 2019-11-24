@@ -4,6 +4,7 @@
       logo
       h1.title prossell-web
       h2.subtitle My remarkable Nuxt.js project
+      p {{$mq}}
       .links
         a(href="https://nuxtjs.org/" target="_blank" class="button--green") Documentation
         a(href="https://github.com/nuxt/nuxt.js", target="_blank", class="button--grey") GitHub

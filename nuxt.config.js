@@ -67,7 +67,11 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/style-resources', 'nuxt-webfontloader'],
+  modules: [
+    '@nuxtjs/style-resources', 
+    'nuxt-webfontloader',
+    ['nuxt-mq']
+  ],
   styleResources: {
     scss: ['~/assets/scss/variables.scss'],
     less: [],
@@ -81,6 +85,14 @@ export default {
         'https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,400&display=swap',
         'https://fonts.googleapis.com/css?family=PT+Sans:700i&display=swap'
       ]
+    }
+  },
+  mq: {
+    defaultBreakpoint: 'default',
+    breakpoints: {
+      sm: 450,
+      md: 1250,
+      lg: Infinity
     }
   },
   /*
