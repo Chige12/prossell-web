@@ -38,11 +38,19 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/style-resources', ['nuxt-mq']],
   styleResources: {
     scss: ['~/assets/scss/variables.scss'],
     less: [],
     stylus: []
+  },
+  mq: {
+    defaultBreakpoint: 'default',
+    breakpoints: {
+      sm: 450,
+      md: 1250,
+      lg: Infinity
+    }
   },
   /*
    ** Build configuration
