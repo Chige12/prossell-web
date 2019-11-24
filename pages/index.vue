@@ -2,6 +2,7 @@
   .container
     <div>
       logo
+      AwardSvg
       h1.title prossell-web
       h2.subtitle My remarkable Nuxt.js project
       p {{$mq}}
@@ -13,10 +14,12 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import AwardSvg from '~/assets/images/award.svg?inline'
 
 export default {
   components: {
-    Logo
+    Logo,
+    AwardSvg
   },
   head() {
     return {
