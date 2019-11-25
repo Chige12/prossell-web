@@ -1,9 +1,9 @@
 <template lang="pug">
   .BackgourndTriangleTop
-    .back_tri_wrapper.back_white
-      TriSvgWhite.back_tri
-    .back_tri_wrapper.back_grad
-      TriSvgGrad.back_tri
+    .back_tri_wrapper
+      TriSvgWhite.back_white
+    .back_tri_wrapper
+      TriSvgGrad.back_grad
       
 </template>
 <script>
@@ -18,12 +18,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 .back_tri_wrapper {
+  width: 100%;
   @include absolute($top: 0, $left: 0);
 }
-.back_white .back_tri {
-  width: 200px;
+.back_white {
+  width: 86%;
 }
-.back_grad .back_tri {
-  width: 100px;
+.back_grad {
+  width: 50%;
 }
 </style>
