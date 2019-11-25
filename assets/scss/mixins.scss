@@ -1,0 +1,22 @@
+@mixin absolute($top:null, $right:null, $bottom:null, $left:null){
+  position: absolute;
+  @if $top != null{
+    top: $top;
+  }
+  @if $right != null{
+    right: $right;
+  }
+  @if $bottom != null{
+    bottom: $bottom;
+  }
+  @if $left != null{
+    left: $left;
+  }
+}
+
+@mixin flex($wrap:nowrap, $justifyContent:space-between, $alignItems: center) {
+  display: flex;
+  flex-wrap: $wrap;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
