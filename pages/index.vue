@@ -1,25 +1,51 @@
 <template lang="pug">
-  .container
-    <div>
-      logo
-      AwardSvg
-      h1.title prossell-web
-      h2.subtitle My remarkable Nuxt.js project
-      p {{$mq}}
-      .links
-        a(href="https://nuxtjs.org/" target="_blank" class="button--green") Documentation
-        a(href="https://github.com/nuxt/nuxt.js", target="_blank", class="button--grey") GitHub
-    </div>
+  .index
+    BackgroundTriangleTop
+    SecTopVisual
+    SecConsept
+    SecThreeFeatures
+    BackgroundTriangleMiddle
+    SecSchedule
+    SecInformation
+    SecVision
+    .separator
+    SecAward
+    SecShareSNS
+    SecSponsors
+    Footer
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import AwardSvg from '~/assets/images/award.svg?inline'
+// background triangle
+import BackgroundTriangleTop from '~/components/atoms/BackgroundTriangleTop.vue'
+import BackgroundTriangleMiddle from '~/components/atoms/BackgroundTriangleMiddle.vue'
+
+// section
+import SecTopVisual from '~/components/organisms/SecTopVisual.vue'
+import SecConsept from '~/components/organisms/SecConsept.vue'
+import SecThreeFeatures from '~/components/organisms/SecThreeFeatures.vue'
+import SecSchedule from '~/components/organisms/SecSchedule.vue'
+import SecInformation from '~/components/organisms/SecInformation.vue'
+import SecVision from '~/components/organisms/SecVision.vue'
+import SecAward from '~/components/organisms/SecAward.vue'
+import SecShareSNS from '~/components/organisms/SecShareSNS.vue'
+import SecSponsors from '~/components/organisms/SecSponsors.vue'
+import Footer from '~/components/organisms/Footer.vue'
 
 export default {
   components: {
-    Logo,
-    AwardSvg
+    BackgroundTriangleTop,
+    SecTopVisual,
+    SecConsept,
+    SecThreeFeatures,
+    BackgroundTriangleMiddle,
+    SecSchedule,
+    SecInformation,
+    SecVision,
+    SecAward,
+    SecShareSNS,
+    SecSponsors,
+    Footer
   },
   head() {
     return {
@@ -30,32 +56,7 @@ export default {
 </script>
 
 <style lang="scss">
-.container {
-  margin: 0 auto;
+.index {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: $PT-sans;
-  display: block;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: $weight-thin;
-  font-size: 42px;
-  color: $theme-blue;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
 }
 </style>
