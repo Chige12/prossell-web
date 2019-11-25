@@ -4,7 +4,6 @@
       TriSvgWhite.back_white
     .back_tri_wrapper
       TriSvgGrad.back_grad
-      
 </template>
 <script>
 import TriSvgGrad from '~/assets/images/tri_1.svg?inline'
@@ -19,12 +18,23 @@ export default {
 <style lang="scss" scoped>
 .back_tri_wrapper {
   width: 100%;
+  height: auto;
   @include absolute($top: 0, $left: 0);
+  z-index: -1;
+  overflow: hidden;
 }
 .back_white {
   width: 86%;
 }
 .back_grad {
   width: 50%;
+}
+@media screen and (max-width: 450px) {
+  .back_white {
+    width: 110%;
+  }
+  .back_grad {
+    width: 70%;
+  }
 }
 </style>

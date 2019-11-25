@@ -1,10 +1,10 @@
 <template lang="pug">
   .index
-    BackgroundTriangleTop
-    SecTopVisual
+    BackgroundTriangleTop.background
+    SecTopVisual.topvisual
     SecConsept
     SecThreeFeatures
-    BackgroundTriangleMiddle
+    BackgroundTriangleMiddle.background
     SecSchedule
     SecInformation
     SecVision
