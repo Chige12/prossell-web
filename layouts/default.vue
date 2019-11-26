@@ -58,7 +58,7 @@ a:visited {
   .container {
     width: 80%;
     .main_wrapper {
-      width: 80%;
+      width: 80%; //64%
     }
   }
 }
