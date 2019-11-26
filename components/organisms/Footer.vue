@@ -6,15 +6,20 @@
         .totop
           TopSvg(@click="scrollToTop()").totop_svg
     footer.footer_background
+      ProssellSvg.prossell_logo
+      .coppy_right Copyright Prossell All rights reserved.
+
 
 </template>
 <script>
 // 「若者〜〜活用事業」や「↑TOP」も含む
 import TopSvg from '~/assets/images/top.svg?inline'
+import ProssellSvg from '~/assets/images/prossell.svg?inline'
 
 export default {
   components: {
-    TopSvg
+    TopSvg,
+    ProssellSvg
   },
   methods: {
     scrollToTop() {
@@ -49,12 +54,6 @@ export default {
   }
 }
 
-.footer_background {
-  background-color: $black;
-  width: 100%;
-  height: 150px;
-}
-
 @keyframes bound {
   0% {
     transform: translateY(0);
@@ -68,5 +67,23 @@ export default {
   100% {
     transform: translateY(0);
   }
+}
+
+.footer_background {
+  background-color: $black;
+  width: 100%;
+  height: 148px;
+  text-align: center;
+}
+
+.prossell_logo {
+  width: 40px;
+  margin-top: 32px;
+}
+.coppy_right {
+  margin-top: 8px;
+  font-family: $PT-sans;
+  color: $white;
+  font-size: 1.4rem;
 }
 </style>
