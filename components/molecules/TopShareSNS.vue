@@ -1,8 +1,10 @@
 <template lang="pug">
-  .TopShareSNS
-    TwitterSvg(@click="ShereSNS('twitter')").top_sns_icon
-    FacebookSvg(@click="ShereSNS('facebook')").top_sns_icon
-    LineSvg(@click="ShereSNS('line')").top_sns_icon
+  .TopShareSNS(@mouseover="Hover()" @mouseleave="HoverOut()")
+    TwitterSvg(@click="ShereSNS('twitter')" alt="Twitter").top_sns_icon
+    FacebookSvg(@click="ShereSNS('facebook')" alt="Facebook").top_sns_icon
+    LineSvg(@click="ShereSNS('line')" alt="LINE").top_sns_icon
+    .recommend_share(:class="{'recommend_share--open':recommend}")
+      .recommend_share__text SNSでシェア!
 </template>
 <script>
 // 一番上ヘッダーメニューに出て来るシェアボタン
@@ -19,7 +21,8 @@ export default {
   data() {
     return {
       hashtag: 'オンコン',
-      facebook_id: ''
+      facebook_id: '',
+      recommend: false
     }
   },
   methods: {
@@ -44,6 +47,12 @@ export default {
       if (shareLink) {
         location.href = shareLink
       }
+    },
+    Hover() {
+      this.recommend = true
+    },
+    HoverOut() {
+      this.recommend = false
     }
   }
 }
@@ -51,16 +60,38 @@ export default {
 <style lang="scss" scoped>
 .TopShareSNS {
   @include flex();
+  position: relative;
+  margin-left: 28px;
 }
 .top_sns_icon {
-  position: relative;
   width: 36px;
   height: 36px;
   display: block;
   margin-left: 8px;
   cursor: pointer;
   &:first-child {
-    margin-left: 28px;
+    margin-left: 0;
+  }
+}
+.recommend_share {
+  z-index: -1;
+  @include absolute($top: 44px, $left: 0, $right: 0);
+  width: 100%;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(-12px);
+  transition: 0.3s $ease-out-1;
+  &--open {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  &__text {
+    text-align: center;
+    background: $theme-gradient;
+    padding-top: 2px;
+    padding-bottom: 4px;
+    font-size: 1.4rem;
+    color: $black;
   }
 }
 </style>
