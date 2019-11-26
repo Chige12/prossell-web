@@ -69,8 +69,13 @@ export default {
   display: block;
   margin-left: 8px;
   cursor: pointer;
+  transition: 0.3s $ease-out-1;
+  transform: translateY(0);
   &:first-child {
     margin-left: 0;
+  }
+  &:hover {
+    transform: translateY(-4px);
   }
 }
 .recommend_share {
