@@ -30,11 +30,9 @@ body {
 
 .container {
   margin: 0 auto;
-  min-height: 100vh;
   width: calc(100% - 280px);
   .main_wrapper {
     margin: 0 auto;
-    min-height: 100vh;
     width: calc(100% - 200px);
   }
 }

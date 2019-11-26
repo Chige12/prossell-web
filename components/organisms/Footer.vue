@@ -1,9 +1,89 @@
 <template lang="pug">
-  .Fotter
-    fotter
+  .Footer
+    .container
+      .before_footer
+        .wakamono 若者提案プロジェクト補助金活用事業
+        .totop
+          TopSvg(@click="scrollToTop()").totop_svg
+    footer.footer_background
+      ProssellSvg.prossell_logo
+      .coppy_right Copyright Prossell All rights reserved.
+
+
 </template>
 <script>
 // 「若者〜〜活用事業」や「↑TOP」も含む
-export default {}
+import TopSvg from '~/assets/images/top.svg?inline'
+import ProssellSvg from '~/assets/images/prossell.svg?inline'
+
+export default {
+  components: {
+    TopSvg,
+    ProssellSvg
+  },
+  methods: {
+    scrollToTop() {
+      scrollTo(0, 0)
+    }
+  }
+}
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.Footer {
+  margin-top: 40px;
+}
+
+.before_footer {
+  position: relative;
+}
+.wakamono {
+  text-align: center;
+  padding-bottom: 24px;
+  font-size: 2rem;
+}
+.totop {
+  @include absolute($bottom: 16px, $right: 0);
+  &_svg {
+    display: block;
+    width: 40px;
+    cursor: pointer;
+    padding: 4px 0;
+    &:hover {
+      animation: 0.8s bound ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes bound {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.footer_background {
+  background-color: $black;
+  width: 100%;
+  height: 148px;
+  text-align: center;
+}
+
+.prossell_logo {
+  width: 40px;
+  margin-top: 32px;
+}
+.coppy_right {
+  margin-top: 8px;
+  font-family: $PT-sans;
+  color: $white;
+  font-size: 1.4rem;
+}
+</style>
