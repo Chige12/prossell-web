@@ -6,7 +6,6 @@
   font-size: 2.4rem;
   &::before{
     @include absolute($top: 30%, $right: 0, $left: 50%, $bottom: 0);
-    // margin: 0 auto;
     content: '';
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -25,7 +24,6 @@
   }
   &_other {
     display: inline;
-    font-size: 2.8rem;
   }
 }
 
