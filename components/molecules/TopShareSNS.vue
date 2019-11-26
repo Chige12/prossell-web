@@ -49,10 +49,14 @@ export default {
       }
     },
     Hover() {
-      this.recommend = true
+      if (this.$mq !== 'sm') {
+        this.recommend = true
+      }
     },
     HoverOut() {
-      this.recommend = false
+      if (this.$mq !== 'sm') {
+        this.recommend = false
+      }
     }
   }
 }
@@ -97,6 +101,13 @@ export default {
     padding-bottom: 4px;
     font-size: 1.4rem;
     color: $black;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .top_sns_icon:hover {
+    transform: translateY(0);
+    filter: brightness(1.3);
   }
 }
 </style>
