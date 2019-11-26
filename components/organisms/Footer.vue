@@ -1,6 +1,6 @@
 <template lang="pug">
-  .Fotter
-    fotter
+  .Footer
+    footer
 </template>
 <script>
 // 「若者〜〜活用事業」や「↑TOP」も含む
