@@ -2,9 +2,6 @@
   .TopShareSNS
     TwitterSvg(@click="ShereSNS('twitter')").top_sns_icon
     FacebookSvg(@click="ShereSNS('facebook')").top_sns_icon
-    //- .top_sns_icon(@click="ShereSNS('instagram')")
-      SNSIconSvg.top_sns_icon--wrapsvg
-      img(src="~/assets/images/instagram.png" alt="instagram").top_sns_icon--image
     LineSvg(@click="ShereSNS('line')").top_sns_icon
 </template>
 <script>
@@ -12,14 +9,12 @@
 import TwitterSvg from '~/assets/images/twitter.svg?inline'
 import FacebookSvg from '~/assets/images/facebook.svg?inline'
 import LineSvg from '~/assets/images/line.svg?inline'
-// import SNSIconSvg from '~/assets/images/sns_icon.svg?inline'
 
 export default {
   components: {
     TwitterSvg,
     FacebookSvg,
     LineSvg
-    // SNSIconSvg
   },
   data() {
     return {
@@ -66,17 +61,6 @@ export default {
   cursor: pointer;
   &:first-child {
     margin-left: 28px;
-  }
-  &--wrapsvg {
-    width: 100%;
-    height: 100%;
-  }
-  &--image {
-    @include absolute(0, 0, 0, 0);
-    display: block;
-    margin: auto;
-    width: 80%;
-    height: 80%;
   }
 }
 </style>
