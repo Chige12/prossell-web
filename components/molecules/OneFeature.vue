@@ -4,7 +4,7 @@
     Icon1OnlineSvg.feature_logo(v-if="logo === 0")
     Icon2LinkSvg.feature_logo(v-if="logo === 1")
     Icon3ProcessSvg.feature_logo(v-if="logo === 2")
-    .feature_description(v-html="description")
+    .feature_discription(v-html="discription")
 
 </template>
 <script>
@@ -29,7 +29,7 @@ export default {
       type: Number,
       default: -1
     },
-    description: {
+    discription: {
       type: String,
       default: ''
     }
@@ -39,18 +39,21 @@ export default {
 <style lang="scss" scoped>
 .OneFeature {
   text-align: center;
+  margin: 0 40px;
 }
 .feature_title {
   font-weight: $weight-thin;
-  font-size: 4.4rem;
+  font-size: 3.2rem;
 }
 
 .feature_logo {
-  width: 300px;
+  margin-top: 20px;
+  width: 180px;
   display: inline-block;
 }
 
 .feature_discription {
-  font-size: 2rem;
+  margin-top: 20px;
+  font-size: 1.8rem;
 }
 </style>

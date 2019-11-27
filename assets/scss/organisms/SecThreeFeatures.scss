@@ -1,4 +1,11 @@
 .SecThreeFeatures {
-  margin: 0 120px 50px 120px;
+  margin: 0 30px 50px 30px;
+}
 
+.feature_content{
+  @include flex($wrap: wrap, $justifyContent: center, $alignItems: center);
+}
+
+.feature_topic {
+  margin-top: 80px;
 }
