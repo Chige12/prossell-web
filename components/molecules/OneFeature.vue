@@ -38,8 +38,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .OneFeature {
+  width: 310px;
   text-align: center;
-  margin: 0 40px;
+  margin: 0 10px;
 }
 .feature_title {
   font-weight: $weight-thin;
@@ -55,5 +56,18 @@ export default {
 .feature_discription {
   margin-top: 20px;
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1270px) {
+  .OneFeature {
+    width: 240px;
+  }
+  .feature_title {
+    font-size: 2.8rem;
+  }
+
+  .feature_discription {
+    font-size: 1.4rem;
+  }
 }
 </style>

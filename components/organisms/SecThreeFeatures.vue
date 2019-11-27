@@ -1,13 +1,14 @@
 <template lang="pug">
   .SecThreeFeatures
-    SectionTitle(:title="'ThreeFeatures'")
-    .feature_content
-      .feature_topic(v-for="(feature,feature_id) in features")
-        OneFeature(
-          :title="feature.title"
-          :logo="feature_id"
-          :discription="feature.discription"
-        )
+    .container
+      SectionTitle(:title="'ThreeFeatures'")
+      .feature_content
+        .feature_topic(v-for="(feature,feature_id) in features")
+          OneFeature(
+            :title="feature.title"
+            :logo="feature_id"
+            :discription="feature.discription"
+          )
 </template>
 <script>
 // components
