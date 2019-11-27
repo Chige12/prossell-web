@@ -10,11 +10,11 @@
     &__property {
       font-weight: $weight-thin;
       font-size: 4rem;
-      width: 24%;
+      width: 28%;
     }
     &__contents {
-      padding-top: 8px;
-      font-size: 1.8rem;
+      padding-top: 4px;
+      font-size: 2rem;
       line-height: 1.8;
       td {
         padding-right: 8px;
@@ -24,10 +24,10 @@
 }
 
 .award_img {
-  flex-grow: 0;
-  flex-shrink: 0;
-  text-align: right;
+  text-align: center;
+  width: 50%;
   &__svg {
+    width: 50%;
     min-width: 180px;
   }
   &__cap {
@@ -37,9 +37,6 @@
 }
 
 @media screen and (max-width: 1250px) {
-  .main_wrapper {
-    align-items: flex-start;
-  }
   .award_txt {
     width: 100%;
     margin-bottom: 16px;
@@ -51,8 +48,9 @@
     }
   }
   .award_img {
-    flex-grow: 1;
-    flex-shrink: 1;
+    text-align: right;
+    width: 30%;
+    padding-left: 16px;
     &__svg {
       width: 100%;
       min-width: 100px;
