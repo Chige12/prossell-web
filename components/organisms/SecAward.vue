@@ -2,6 +2,9 @@
   .SecAward
     SectionTitle(:title="'Award'")
     .container
+      .award_img--sm(v-if="$mq === 'sm'")
+        AwardSvg.award_img--sm__svg
+        .award_img--sm__cap designed by Payungkead from Flaticon
       .main_wrapper
         .award_txt
           .award_txt__row
@@ -19,7 +22,7 @@
                 tr
                   td 企業賞：
                   td 当日までのお楽しみ
-        .award_img
+        .award_img(v-if="$mq !== 'sm'")
           AwardSvg.award_img__svg
           .award_img__cap designed by Payungkead from Flaticon
 </template>
@@ -34,7 +37,5 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.main_wrapper {
-  @include flex();
-}
+@import '~/assets/scss/organisms/SecAward.scss';
 </style>

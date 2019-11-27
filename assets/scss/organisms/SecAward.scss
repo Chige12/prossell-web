@@ -1,0 +1,72 @@
+.main_wrapper {
+  @include flex();
+}
+.award_txt {
+  width: 100%;
+  margin-bottom: 16px;
+  &__row {
+    @include flex($justifyContent: flex-start, $alignItems: flex-start);
+    padding-bottom: 24px;
+    &__property {
+      font-weight: $weight-thin;
+      font-size: 4rem;
+      width: 24%;
+    }
+    &__contents {
+      padding-top: 8px;
+      font-size: 1.8rem;
+      line-height: 1.8;
+      td {
+        padding-right: 8px;
+      }
+    }
+  }
+}
+
+.award_img {
+  flex-grow: 0;
+  flex-shrink: 0;
+  &__svg {
+    min-width: 200px;
+  }
+  &__cap {
+    font-size: 1.2rem;
+    color: $gray;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .award_img--sm {
+    width: 100%;
+    text-align: center;
+    margin: 16px 0;
+    &__svg {
+      width: 36%;
+      min-width: 80px;
+    }
+    &__cap {
+      font-size: 1rem;
+      color: $gray;
+    }
+  }
+  .award_txt {
+    width: 100%;
+    &__row {
+      display: block;
+      padding-bottom: 18px;
+      &__property {
+        font-weight: $weight-thin;
+        font-size: 2.3rem;
+        width: 100%;
+      }
+      &__contents {
+        padding-top: 8px;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        td {
+          padding-right: 4px;
+        }
+      }
+    }
+  }
+}
