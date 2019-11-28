@@ -13,13 +13,13 @@
             LineSvg(@click="ShereSNS('line')" alt="Line").share_link
         .share_contents
           .share_contents__title フォローして最新情報をチェック！
-          .share_contents__links
+          .share_contents__links.share_contents__links--check
             a(href="https://twitter.com/Prossell_JP").check_link.check_link__twitter
-                TwitterWhiteSvg.check_link__logo
-                .check_link__txt @Prossell_JP
+              TwitterWhiteSvg.check_link__logo
+              .check_link__txt @Prossell_JP
             a(href="https://www.instagram.com/Prossell_official/").check_link.check_link__instagram
-                InstagramWhiteSvg.check_link__logo
-                .check_link__txt @prossell_official
+              InstagramWhiteSvg.check_link__logo
+              .check_link__txt @prossell_official
 </template>
 <script>
 // components
@@ -75,6 +75,7 @@ export default {
 <style lang="scss" scoped>
 .main_wrapper {
   text-align: center;
+  margin-bottom: 40px;
 }
 .share_contents {
   margin-top: 52px;
@@ -110,7 +111,7 @@ export default {
       height: 56px;
       border-radius: 28px;
       display: inline-block;
-      @include flex();
+      @include flex($justifyContent: center);
       padding: 0px 28px;
       transition: 0.3s $ease-out-1;
       filter: drop-shadow(0 0 0 rgba($black, 0));
@@ -144,6 +145,43 @@ export default {
   a:link,
   a:visited {
     text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .check_link {
+    margin: 8px 0;
+  }
+  .share_contents__links--check {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .share_contents {
+    margin-top: 32px;
+    &__title {
+      font-size: 1.6rem;
+    }
+    .title_black {
+      height: 1.7rem;
+    }
+    &__links {
+      margin-top: 8px;
+      .share_link {
+        width: 54px;
+      }
+      .check_link {
+        height: 48px;
+        border-radius: 24px;
+        &__logo {
+          width: 2.8rem;
+          margin-right: 18px;
+        }
+        &__txt {
+          font-size: 2rem;
+        }
+      }
+    }
   }
 }
 </style>
