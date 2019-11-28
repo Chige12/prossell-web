@@ -79,14 +79,14 @@ export default {
 .share_contents {
   margin-top: 52px;
   &__title {
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     color: $gray-txt;
     .title_black {
       display: inline-block;
       background: $black;
       color: $white;
       padding: 0 2px;
-      height: 2.2rem;
+      height: 2.1rem;
       line-height: 0.9;
     }
   }
@@ -94,24 +94,37 @@ export default {
     margin-top: 16px;
     @include flex($justifyContent: center);
     .share_link {
+      position: relative;
       margin: 8px;
-      width: 64px;
+      width: 58px;
       cursor: pointer;
+      transition: 0.3s $ease-out-1;
+      filter: drop-shadow(0 0 0 rgba($black, 0));
+      &:hover {
+        transform: translateY(-4px);
+        filter: drop-shadow(0 2px 4px rgba($black, 0.4));
+      }
     }
     .check_link {
       margin: 8px 12px;
-      height: 64px;
-      border-radius: 32px;
+      height: 56px;
+      border-radius: 28px;
       display: inline-block;
       @include flex();
-      padding: 0px 32px;
+      padding: 0px 28px;
+      transition: 0.3s $ease-out-1;
+      filter: drop-shadow(0 0 0 rgba($black, 0));
+      &:hover {
+        transform: translateY(-4px);
+        filter: drop-shadow(0 2px 4px rgba($black, 0.4));
+      }
       &__logo {
         width: 3.2rem;
-        margin-right: 18px;
+        margin-right: 14px;
       }
       &__txt {
         font-family: $PT-sans;
-        font-size: 2.8rem;
+        font-size: 2.4rem;
         color: $white;
       }
       &__twitter {
