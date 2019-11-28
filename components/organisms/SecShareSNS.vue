@@ -8,18 +8,18 @@
             span.title_black #オンコン
             | をSNSでシェア！
           .share_contents__links
-            TwitterSvg.share_link
-            FacebookSvg.share_link
-            LineSvg.share_link
+            TwitterSvg(@click="ShereSNS('twitter')" alt="Twitter").share_link
+            FacebookSvg(@click="ShereSNS('facebook')" alt="Facebook").share_link
+            LineSvg(@click="ShereSNS('line')" alt="Line").share_link
         .share_contents
           .share_contents__title フォローして最新情報をチェック！
           .share_contents__links
-            .check_link.check_link__twitter
-              TwitterWhiteSvg.check_link__logo
-              .check_link__txt @Prossell_JP
-            .check_link.check_link__instagram
-              InstagramWhiteSvg.check_link__logo
-              .check_link__txt @prossell_official
+            a(href="https://twitter.com/Prossell_JP").check_link.check_link__twitter
+                TwitterWhiteSvg.check_link__logo
+                .check_link__txt @Prossell_JP
+            a(href="https://www.instagram.com/Prossell_official/").check_link.check_link__instagram
+                InstagramWhiteSvg.check_link__logo
+                .check_link__txt @prossell_official
 </template>
 <script>
 // components
@@ -39,6 +39,36 @@ export default {
     LineSvg,
     TwitterWhiteSvg,
     InstagramWhiteSvg
+  },
+  data() {
+    return {
+      hashtag: 'オンコン',
+      facebook_id: ''
+    }
+  },
+  methods: {
+    ShereSNS(sns) {
+      const originalURL = location.href
+      const newURL = originalURL.replace(/\#.*$/, '')
+      const url = encodeURIComponent(newURL)
+      const hashtag = encodeURIComponent(` #${this.hashtag}\n`)
+      let shareLink = null
+
+      switch (sns) {
+        case 'line':
+          shareLink = `https://social-plugins.line.me/lineit/share?url=${url}&text=${hashtag}`
+          break
+        case 'twitter':
+          shareLink = `http://twitter.com/share?url=${url}&text=${hashtag}`
+          break
+        case 'facebook':
+          shareLink = `https://www.facebook.com/dialog/share?app_id=${this.facebook_id}&display=popup&href=${url}&redirect_uri=${url}&hashtag=${hashtag}`
+          break
+      }
+      if (shareLink) {
+        location.href = shareLink
+      }
+    }
   }
 }
 </script>
@@ -65,14 +95,16 @@ export default {
     @include flex($justifyContent: center);
     .share_link {
       margin: 8px;
-      width: 60px;
+      width: 64px;
+      cursor: pointer;
     }
     .check_link {
       margin: 8px 12px;
       height: 64px;
       border-radius: 32px;
-      padding: 0px 32px;
+      display: inline-block;
       @include flex();
+      padding: 0px 32px;
       &__logo {
         width: 3.2rem;
         margin-right: 18px;
@@ -94,6 +126,11 @@ export default {
         );
       }
     }
+  }
+  a,
+  a:link,
+  a:visited {
+    text-decoration: none;
   }
 }
 </style>
