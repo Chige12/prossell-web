@@ -60,14 +60,27 @@ a:visited {
     }
   }
 }
+@media screen and (max-width: 1000px) {
+  // md
+  .container {
+    .main_wrapper {
+      width: 90%;
+    }
+  }
+}
+@media screen and (max-width: 640px) {
+  // md
+  .container {
+    .main_wrapper {
+      width: 100%;
+    }
+  }
+}
 
 @media screen and (max-width: 450px) {
   // sm
   .container {
     width: calc(100% - 40px);
-    .main_wrapper {
-      width: 100%;
-    }
   }
 }
 </style>
