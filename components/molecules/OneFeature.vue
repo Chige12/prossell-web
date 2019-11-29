@@ -1,10 +1,17 @@
 <template lang="pug">
-  .OneFeature
+  .OneFeature(v-if="$mq !== 'sm' && $mq !== 'tb'")
     .feature_title {{title}}
     Icon1OnlineSvg.feature_logo(v-if="logo === 0")
     Icon2LinkSvg.feature_logo(v-if="logo === 1")
     Icon3ProcessSvg.feature_logo(v-if="logo === 2")
     .feature_discription(v-html="discription")
+  .OneFeature_side(v-else)
+    Icon1OnlineSvg.feature_logo(v-if="logo === 0")
+    Icon2LinkSvg.feature_logo(v-if="logo === 1")
+    Icon3ProcessSvg.feature_logo(v-if="logo === 2")
+    .OneFeature_side_text
+      .feature_title {{title}}
+      .feature_discription(v-html="discription")
 
 </template>
 <script>
@@ -41,6 +48,18 @@ export default {
   width: 310px;
   text-align: center;
   margin: 0 10px;
+  &_side {
+    width: 456px;
+    @include flex();
+    flex-direction: row;
+    .feature_logo {
+      margin-right: 50px;
+      width: 100px;
+    }
+    &_text {
+      margin-right: auto;
+    }
+  }
 }
 .feature_title {
   font-weight: $weight-thin;
@@ -67,7 +86,48 @@ export default {
   }
 
   .feature_discription {
+    margin-top: 5px;
     font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .feature_title {
+    font-size: 3.2rem;
+  }
+  .feature_discription {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .OneFeature_side {
+    width: 378px;
+    .feature_logo {
+      margin-right: 40px;
+    }
+  }
+  .feature_title {
+    font-size: 2.8rem;
+  }
+  .feature_discription {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .OneFeature_side {
+    width: 294px;
+    .feature_logo {
+      width: 70px;
+      margin-right: 20px;
+    }
+  }
+  .feature_title {
+    font-size: 2rem;
+  }
+  .feature_discription {
+    font-size: 1.2rem;
   }
 }
 </style>

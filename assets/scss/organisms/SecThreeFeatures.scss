@@ -9,3 +9,20 @@
 .feature_topic {
   margin-top: 80px;
 }
+
+@media screen and (max-width: 1024px) {
+  .feature_topic {
+    margin-top: 60px;
+  }
+  .feature_content{
+    @include flex();
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .feature_topic {
+    margin-top: 40px;
+  }
+}
