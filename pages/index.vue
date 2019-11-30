@@ -67,5 +67,6 @@ export default {
 }
 .tri_mid_wrapper {
   position: relative;
+  overflow: hidden;
 }
 </style>
