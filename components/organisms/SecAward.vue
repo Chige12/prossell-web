@@ -15,7 +15,7 @@
           .award_txt__row
             .award_txt__row__property 賞
             .award_txt__row__contents
-              table
+              table: tbody
                 tr
                   td 最優秀賞：
                   td 賞金10万円

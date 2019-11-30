@@ -65,4 +65,8 @@ export default {
   height: 100px;
   width: 100%;
 }
+.tri_mid_wrapper {
+  position: relative;
+  overflow: hidden;
+}
 </style>
