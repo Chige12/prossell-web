@@ -4,10 +4,11 @@
     SecTopVisual.topvisual
     SecConsept
     SecThreeFeatures
-    BackgroundTriangleMiddle.background
-    SecSchedule
-    SecInformation
-    SecVision
+    .tri_mid_wrapper
+      BackgroundTriangleMiddle
+      SecSchedule
+      SecInformation
+      SecVision
     .separator
     SecAward
     SecShareSNS
@@ -58,5 +59,10 @@ export default {
 <style lang="scss">
 .index {
   min-height: 100vh;
+}
+.separator {
+  background: $theme-gradient;
+  height: 100px;
+  width: 100%;
 }
 </style>
