@@ -8,8 +8,12 @@
           .idea_txt 相互に相性がわかり、<br>スキルアップもできる就活スタイルへ 
         .comment
           .comment_img
+            .comment_img_img
+            .comment_who(v-if="$mq === 'sm'")
+              .comment_who--post 運営代表  長岡高専 専攻科 2年 
+              .comment_who--name 横山 和輝
           .comment_wrapper
-            .comment_who
+            .comment_who(v-if="$mq !== 'sm'")
               .comment_who--post 運営代表  長岡高専 専攻科 2年 
               .comment_who--name 横山 和輝
             .comment_txt
@@ -20,7 +24,7 @@
               p 今までにない新しい就活を提供していきます。ぜひ挑戦してみてください！
         .matching
           .matching_thinkings
-            .matching_thinkings_title 学生の思い
+            .matching_thinkings_title: span 学生の<br>思い
             .matching_thinkings_txt
               p 企業に認められるような経験や実績を積みたい！
               p 自分に合う企業へ就職したい！
@@ -28,9 +32,9 @@
           .matching_logo
             MatchingSvg.matching_logo_svg
           .matching_thinkings
-            .matching_thinkings_title 企業の思い
+            .matching_thinkings_title: span 企業の<br>思い
             .matching_thinkings_txt
-              p ハッカソンやアイデアソン、ビジネスコンテストなど、<br>
+              p ハッカソンやアイデアソン、ビジネスコンテストなど、
                 | 様々なイベントに参加するアクティブな学生がほしい！
               p 学生のプロジェクトの進め方を見てみたい！
 </template>
