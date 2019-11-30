@@ -8,7 +8,7 @@
           .idea_txt 相互に相性がわかり、<br>スキルアップもできる就活スタイルへ 
         .comment
           .comment_img
-            .comment_img_img
+            img.comment_img_img(src="~/assets/images/yokoyama_kazuki.png")
             .comment_who(v-if="$mq === 'sm'")
               .comment_who--post 運営代表  長岡高専 専攻科 2年 
               .comment_who--name 横山 和輝
