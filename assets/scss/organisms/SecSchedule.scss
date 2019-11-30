@@ -25,11 +25,18 @@
   @include absolute($left:-32px, $bottom: -2px);
 }
 
+.slant_2 {
+  width: 50vw;
+  z-index: -1;
+  margin-left: calc(7 * 28px);
+  @include absolute($left:-32px, $bottom: -2px);
+}
+
 .application_large {
   position: relative;
   width: 50vw;
   margin-left: 16px;
-  @include flex($alignItems: center, $justifyContent: flex-start); 
+  @include flex($alignItems: center, $justifyContent: flex-start);
   &_date{
     font-size: 4rem;
     font-family: $PT-sans;
@@ -42,7 +49,7 @@
 }
 
 .explanation {
-  @include absolute($right:-24px, $bottom: 16px);
+  @include absolute($right:-16px, $bottom: 16px);
   padding: 8px 24px 12px;
   margin-left: auto;
   background-color: $black;
@@ -64,13 +71,20 @@
   &_date {
     font-size: 2.8rem;
     font-family: $PT-sans;
+    width: 148px;
   }
 
   &_text {
-    margin-left: 50px;
     font-size: 2rem;
     font-family: $noto-sans;
     color: $gray-txt;
+  }
+}
+
+.final_pitch{
+  padding-left: calc(7 * 28px);
+  .explanation{
+    @include absolute($right:calc(-7 * 28px - 16px), $bottom: 16px);
   }
 }
 

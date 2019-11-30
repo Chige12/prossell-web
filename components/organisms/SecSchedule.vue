@@ -16,6 +16,12 @@
           .contest_period(v-for="(sch, sch_key) in schedules" :key="`sch_${sch_key}`" :style="`padding-left: ${sch_key * 28}px`")
             .contest_period_date {{sch.data}}
             .contest_period_text {{sch.content}}
+        .application_large.final_pitch
+          Slant2Svg.slant_2
+          .application_large_date 3/3
+          .application_large_text Final pitch
+          .explanation
+            .explanation_text ビデオ通話で最終発表
 
 
 </template>
