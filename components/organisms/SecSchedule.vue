@@ -6,13 +6,16 @@
         .application_period
           .application_period_date 12/11 ~ 1/11
           .application_period_text 参加応募期間
-        Slant1Svg.slant_1
         .application_large
+          Slant1Svg.slant_1
           .application_large_date 1/14
           .application_large_text Kickoff
           .explanation
             .explanation_text 3人1組チームとテーマの発表
-        .contest_period
+        .contest_periods
+          .contest_period(v-for="(sch, sch_key) in schedules" :key="`sch_${sch_key}`" :style="`padding-left: ${sch_key * 28}px`")
+            .contest_period_date {{sch.data}}
+            .contest_period_text {{sch.content}}
 
 
 </template>
