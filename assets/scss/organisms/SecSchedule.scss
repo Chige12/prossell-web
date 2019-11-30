@@ -3,13 +3,11 @@
 }
 .application_period {
   margin-top: 28px;
-  margin-left: 3%;
   margin-bottom: 30px;
-  display: inline-block;
 
-  @include flex($alignItems: center, $justifyContent: flex-start);
+  @include flex($alignItems: top, $justifyContent: flex-start);
   &_date {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     font-family: $PT-sans;
   }
 
@@ -17,20 +15,21 @@
     margin-left: 50px;
     font-size: 2rem;
     font-family: $noto-sans;
-    font-weight: $weight-thin;
+    color: $gray-txt;
   }
 }
 
 .slant_1 {
   width: 50vw;
   z-index: -1;
-  position: relative;
+  @include absolute($left:-32px, $bottom: -2px);
 }
 
 .application_large {
+  position: relative;
   width: 50vw;
-  @include flex($alignItems: center, $justifyContent: flex-start);
-  @include absolute($left:50px, $top: 42px);
+  margin-left: 16px;
+  @include flex($alignItems: center, $justifyContent: flex-start); 
   &_date{
     font-size: 4rem;
     font-family: $PT-sans;
@@ -43,8 +42,8 @@
 }
 
 .explanation {
-  width: 300px;
-  height: 60px;
+  @include absolute($right:-24px, $bottom: 16px);
+  padding: 8px 24px 12px;
   margin-left: auto;
   background-color: $black;
   &_text{
@@ -52,4 +51,26 @@
   }
 }
 
+.contest_periods {
+  padding: 16px 0;
+}
+
+.contest_period {
+  margin-top: 28px;
+  margin-bottom: 30px;
+  margin-left: 48px;
+  @include flex($alignItems: top, $justifyContent: flex-start);
+
+  &_date {
+    font-size: 2.8rem;
+    font-family: $PT-sans;
+  }
+
+  &_text {
+    margin-left: 50px;
+    font-size: 2rem;
+    font-family: $noto-sans;
+    color: $gray-txt;
+  }
+}
 
