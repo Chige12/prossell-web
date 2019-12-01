@@ -101,6 +101,14 @@
   }
 }
 
+@media screen and (max-width: 1580px) {
+  .matching {
+    &_thinkings {
+      padding: 24px 2vw;
+    }
+  }
+}
+
 @media screen and (max-width: 1250px) {
   .idea {
     margin: 24px 0;
