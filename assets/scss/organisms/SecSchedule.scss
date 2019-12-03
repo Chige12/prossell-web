@@ -88,3 +88,68 @@
   }
 }
 
+@media screen and (max-width: 1250px) {
+  .contest_period_text{
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main_wrapper{
+    margin-left: 84px;
+  }
+  .slant_1{
+    width: 400px;
+  }
+
+  .slant_2{
+    width: 360px;
+  }
+
+  .application_large{
+    position: relative;
+    width: 640px;
+    margin-left: 8px;
+    &_date{
+      font-size: 3.2rem;
+    }
+
+    &_text{
+      margin-left: 24px;
+      font-size: 2.8rem;
+    }
+  }
+
+
+  .explanation{
+    @include absolute($right:234px, $bottom: 12px);
+    padding: 4px 8px 6px;
+    font-size: 1.4rem;
+  }
+
+
+  .contest_period{
+    margin-left: 16px;
+    &_date {
+      font-size: 2.4rem;
+      width: 96px;
+    }
+
+    &_text {
+      font-size: 1.6rem;
+    }
+  }
+
+  .final_pitch{
+    .explanation{
+      @include absolute($right:80px, $bottom: 12px);
+    }
+  }
+}
+
+@media screen and (max-width: 860px){
+  .main_wrapper{
+    margin-left: 0px;
+  }
+}
+
