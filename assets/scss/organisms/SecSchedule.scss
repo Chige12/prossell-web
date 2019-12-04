@@ -1,3 +1,9 @@
+.slant_3 {
+  @include absolute($right:0px);
+  height: 626px;
+  z-index: -1;
+}
+
 .main_wrapper {
   position: relative;
 }

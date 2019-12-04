@@ -1,6 +1,7 @@
 <template lang="pug">
   .SecSchedule
     SectionTitle(:title="'Schedule'")
+    Slant3Svg.slant_3
     .container
       .main_wrapper
         .application_period
