@@ -91,7 +91,7 @@ export default {
   mq: {
     defaultBreakpoint: 'default',
     breakpoints: {
-      sm: 450,
+      sm: 640,
       tb: 1025,
       md: 1250,
       lg: Infinity

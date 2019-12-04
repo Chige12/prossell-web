@@ -36,7 +36,7 @@
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: $md) {
   .award_txt {
     width: 100%;
     margin-bottom: 16px;
@@ -83,7 +83,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $sm) {
   .award_img--sm {
     width: 100%;
     text-align: center;

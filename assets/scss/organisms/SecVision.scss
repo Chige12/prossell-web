@@ -101,7 +101,7 @@
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: $md) {
   .idea {
     margin: 24px 0;
     &_svg {
@@ -167,7 +167,7 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $sm) {
   .comment {
     display: block;
     &_img {

@@ -33,3 +33,8 @@
 //cubic-bezier
   $ease-out-1: cubic-bezier(.13,.77,.46,1);
   $ease-in-out-1: cubic-bezier(.75,0,.25,1);
+
+//screen size
+  $sm: 640px;
+  $tb: 1000px; //html側は1025px
+  $md: 1250px;

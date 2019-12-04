@@ -31,7 +31,7 @@
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: $md) {
   .title_wrapper {
     font-size: 2.4rem;
     &::before{
@@ -46,19 +46,10 @@
   }
 }
 
-@media screen and (max-width: 640px) {
-  .title_wrapper {
-    font-size: 1.8rem;
-    &::before{
-      width: 40vw;
-      height: 15px;
-    }
-  }
-}
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $sm) {
   .SectionTitle{
     margin-top: 40px;
+    font-size: 1.8rem;
   }
 
   .title_wrapper {
