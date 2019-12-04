@@ -57,6 +57,10 @@
 }
 
 @media screen and (max-width: 450px) {
+  .SectionTitle{
+    margin-top: 40px;
+  }
+
   .title_wrapper {
     font-size: 1.4rem;
     &::before{

@@ -1,0 +1,289 @@
+.slant_3 {
+  @include absolute($right:0px);
+  height: 626px;
+  z-index: -1;
+}
+
+.main_wrapper {
+  position: relative;
+}
+.application_period {
+  margin-top: 28px;
+  margin-bottom: 30px;
+
+  @include flex($alignItems: top, $justifyContent: flex-start);
+  &_date {
+    font-size: 2.8rem;
+    font-family: $PT-sans;
+  }
+
+  &_text {
+    margin-left: 50px;
+    font-size: 2rem;
+    font-family: $noto-sans;
+    color: $gray-txt;
+  }
+}
+
+.slant_1 {
+  width: 50vw;
+  z-index: -1;
+  @include absolute($left:-32px, $bottom: -2px);
+}
+
+.slant_2 {
+  width: 50vw;
+  z-index: -1;
+  margin-left: calc(7 * 28px);
+  @include absolute($left:-32px, $bottom: -2px);
+}
+
+.application_large {
+  position: relative;
+  width: 50vw;
+  margin-left: 16px;
+  @include flex($alignItems: center, $justifyContent: flex-start);
+  &_date{
+    font-size: 4rem;
+    font-family: $PT-sans;
+  }
+  &_text{
+    margin-left: 44px;
+    font-size: 3.6rem;
+    font-family: $PT-sans;
+  }
+}
+
+.explanation {
+  @include absolute($right:-16px, $bottom: 16px);
+  padding: 8px 24px 12px;
+  margin-left: auto;
+  background-color: $black;
+  &_text{
+    color: $white;
+  }
+}
+
+.contest_periods {
+  padding: 16px 0;
+}
+
+.contest_period {
+  margin-top: 28px;
+  margin-bottom: 30px;
+  margin-left: 48px;
+  @include flex($alignItems: center, $justifyContent: flex-start);
+
+  &_date {
+    font-size: 2.8rem;
+    font-family: $PT-sans;
+    width: 148px;
+  }
+
+  &_text {
+    font-size: 2rem;
+    font-family: $noto-sans;
+    color: $gray-txt;
+  }
+}
+
+.final_pitch{
+  padding-left: calc(7 * 28px);
+  .explanation{
+    @include absolute($right:calc(-7 * 28px - 16px), $bottom: 16px);
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .contest_period_text{
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main_wrapper{
+    margin-left: 84px;
+  }
+  .slant_1{
+    width: 400px;
+  }
+
+  .slant_2{
+    width: 360px;
+  }
+
+  .application_large{
+    position: relative;
+    width: 640px;
+    margin-left: 8px;
+    &_date{
+      font-size: 3.2rem;
+    }
+
+    &_text{
+      margin-left: 24px;
+      font-size: 2.8rem;
+    }
+  }
+
+
+  .explanation{
+    @include absolute($right:234px, $bottom: 12px);
+    padding: 4px 8px 6px;
+    font-size: 1.4rem;
+  }
+
+
+  .contest_period{
+    margin-left: 16px;
+    &_date {
+      font-size: 2.4rem;
+      width: 96px;
+    }
+
+    &_text {
+      font-size: 1.6rem;
+    }
+  }
+
+  .final_pitch{
+    .explanation{
+      @include absolute($right:80px, $bottom: 12px);
+    }
+  }
+}
+
+@media screen and (max-width: 860px){
+  .main_wrapper{
+    margin-left: 0px;
+  }
+
+  .contest_period{
+    margin-left: 8px;
+    &_text {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 640px){
+  .slant_3{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container{
+    width: 100%;
+    .main_wrapper{
+      margin-left: 10%;
+    }
+  }
+  .slant_1{
+    display: none;
+  }
+
+  .slant_2{
+    display: none;
+  }
+
+
+  .application_period {
+    margin-bottom: 16px;
+    @include flex($alignItems: baseline, $justifyContent: flex-start);
+    &_date {
+      font-size: 1.6rem;
+    }
+
+    &_text {
+      font-size: 1.4rem;
+      margin-left: 16px;
+    }
+  }
+
+  .application_large{
+    margin-left: -8px;
+
+    &_date{
+      font-size: 2.0rem;
+    }
+    &_text{
+      font-size: 1.6rem;
+      margin-left: 16px;
+    }
+
+    &::before{
+      content: '';
+      @include absolute($top: 12px, $right: 0, $left: 20%, $bottom: 0);
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      display: inline-block;
+      width: 100%;
+      height: 16px;
+      background: linear-gradient(60deg, $grad-green 0%, $theme-blue 100%);
+      z-index: -1;
+    }
+  }
+
+  .contest_period{
+    margin-left: 0px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    @include flex($alignItems: baseline, $justifyContent: flex-start);
+
+    &_date{
+      font-size: 1.6rem;
+      width: 64px;
+    }
+    &_text{
+      font-size: 1.4rem;
+    }
+  }
+
+  .explanation{
+    right: 45%;
+    bottom: 4px;
+    font-size: 1.2rem;
+  }
+
+  .final_pitch{
+    padding-left: 0;
+    .explanation{
+
+      right: calc(45% + 36px);
+      bottom: 4px;
+      font-size: 1.2rem;
+    }
+
+    &::before{
+      background: linear-gradient(60deg, $theme-green 0%, $grad-blue 100%);
+    }
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  .contest_period_text{
+    font-size: 1.2rem
+  }
+
+  .container{
+    .main_wrapper{
+      margin-left: 7%;
+    }
+  }
+
+  .explanation{
+    right: 54%;
+  }
+
+  .final_pitch{
+    .explanation{
+      right: calc(54% + 36px);
+    }
+  }
+}
+
+
+
