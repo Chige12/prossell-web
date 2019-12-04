@@ -72,7 +72,7 @@
   margin-top: 28px;
   margin-bottom: 30px;
   margin-left: 48px;
-  @include flex($alignItems: top, $justifyContent: flex-start);
+  @include flex($alignItems: center, $justifyContent: flex-start);
 
   &_date {
     font-size: 2.8rem;
@@ -157,5 +157,133 @@
   .main_wrapper{
     margin-left: 0px;
   }
+
+  .contest_period{
+    margin-left: 8px;
+    &_text {
+      font-size: 1.4rem;
+    }
+  }
 }
+
+@media screen and (max-width: 640px){
+  .slant_3{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container{
+    width: 100%;
+    .main_wrapper{
+      margin-left: 10%;
+    }
+  }
+  .slant_1{
+    display: none;
+  }
+
+  .slant_2{
+    display: none;
+  }
+
+
+  .application_period {
+    margin-bottom: 16px;
+    @include flex($alignItems: baseline, $justifyContent: flex-start);
+    &_date {
+      font-size: 1.6rem;
+    }
+
+    &_text {
+      font-size: 1.4rem;
+      margin-left: 16px;
+    }
+  }
+
+  .application_large{
+    margin-left: -8px;
+
+    &_date{
+      font-size: 2.0rem;
+    }
+    &_text{
+      font-size: 1.6rem;
+      margin-left: 16px;
+    }
+
+    &::before{
+      content: '';
+      @include absolute($top: 12px, $right: 0, $left: 20%, $bottom: 0);
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      display: inline-block;
+      width: 100%;
+      height: 16px;
+      background: linear-gradient(60deg, $grad-green 0%, $theme-blue 100%);
+      z-index: -1;
+    }
+  }
+
+  .contest_period{
+    margin-left: 0px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    @include flex($alignItems: baseline, $justifyContent: flex-start);
+
+    &_date{
+      font-size: 1.6rem;
+      width: 64px;
+    }
+    &_text{
+      font-size: 1.4rem;
+    }
+  }
+
+  .explanation{
+    right: 45%;
+    bottom: 4px;
+    font-size: 1.2rem;
+  }
+
+  .final_pitch{
+    padding-left: 0;
+    .explanation{
+
+      right: calc(45% + 36px);
+      bottom: 4px;
+      font-size: 1.2rem;
+    }
+
+    &::before{
+      background: linear-gradient(60deg, $theme-green 0%, $grad-blue 100%);
+    }
+  }
+
+}
+
+@media screen and (max-width: 400px){
+  .contest_period_text{
+    font-size: 1.2rem
+  }
+
+  .container{
+    .main_wrapper{
+      margin-left: 7%;
+    }
+  }
+
+  .explanation{
+    right: 54%;
+  }
+
+  .final_pitch{
+    .explanation{
+      right: calc(54% + 36px);
+    }
+  }
+}
+
+
 

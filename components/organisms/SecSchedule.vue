@@ -13,8 +13,12 @@
           .application_large_text Kickoff
           .explanation
             .explanation_text 3人1組チームとテーマの発表
-        .contest_periods
+        .contest_periods(v-if="$mq !== 'sm'")
           .contest_period(v-for="(sch, sch_key) in schedules" :key="`sch_${sch_key}`" :style="`padding-left: ${sch_key * 28}px`")
+            .contest_period_date {{sch.data}}
+            .contest_period_text {{sch.content}}
+        .contest_periods(v-else)
+          .contest_period(v-for="(sch, sch_key) in schedules" :key="`sch_${sch_key}`")
             .contest_period_date {{sch.data}}
             .contest_period_text {{sch.content}}
         .application_large.final_pitch
