@@ -104,7 +104,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $sm) {
   .top_sns_icon:hover {
     transform: translateY(0);
     filter: brightness(1.3);

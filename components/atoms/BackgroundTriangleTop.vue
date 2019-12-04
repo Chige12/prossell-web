@@ -29,7 +29,7 @@ export default {
 .back_grad {
   width: 50%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $sm) {
   .back_white {
     width: 110%;
   }

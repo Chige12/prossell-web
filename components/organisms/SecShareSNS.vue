@@ -148,7 +148,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: $tb) {
   .check_link {
     margin: 8px 0;
   }
@@ -156,7 +156,7 @@ export default {
     display: inline-block;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $sm) {
   .share_contents {
     margin-top: 32px;
     &__title {

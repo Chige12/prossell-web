@@ -76,7 +76,7 @@
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: $md) {
   .logo {
     margin-top: 1vw;
     width: 43%;
@@ -105,16 +105,8 @@
     }
   }
 }
-@media screen and (max-width: 640px) {
-  .catch_copy {
-    font-size: 5vw;
-    margin-bottom: 2vw;
-    br {
-      display: inline;
-    }
-  }
-}
-@media screen and (max-width: 450px) {
+
+@media screen and (max-width: $sm) {
   .top_visual_box {
     position: relative;
     width: 100%;

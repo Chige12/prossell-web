@@ -98,7 +98,7 @@ a:link,
 a:visited {
   text-decoration: none;
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: $md) {
   .sponsor_box {
     padding: 4px;
   }
@@ -111,7 +111,7 @@ a:visited {
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: $sm) {
   .pran_A {
     width: 100%;
   }
