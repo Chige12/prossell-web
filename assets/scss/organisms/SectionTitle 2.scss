@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: $md) {
   .title_wrapper {
     font-size: 2.4rem;
     &::before{
@@ -45,7 +45,7 @@
   }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: $sm) {
   .title_wrapper {
     font-size: 1.8rem;
     &::before{
