@@ -8,24 +8,24 @@
           .application_period_date 12/11 ~ 1/11
           .application_period_text 参加応募期間
         .application_large
-          Slant1Svg.slant_1
+          Slant1Svg.slant.slant_1
           .application_large_date 1/14
           .application_large_text Kickoff
           .explanation
             .explanation_text 3人1組チームとテーマの発表
         .contest_periods(v-if="$mq !== 'sm'")
-          .contest_period(v-for="(sch, sch_key) in schedules" :key="`sch_${sch_key}`" :style="`padding-left: ${sch_key * 28}px`")
+          .contest_period(v-for="(sch, sch_key) in schedules" :key="`sch_${sch_key}`" :style="`padding-left: ${sch_key * 22.4}px`")
             .contest_period_date {{sch.data}}
             .contest_period_text {{sch.content}}
         .contest_periods(v-else)
           .contest_period(v-for="(sch, sch_key) in schedules" :key="`sch_${sch_key}`")
             .contest_period_date {{sch.data}}
             .contest_period_text {{sch.content}}
-        .application_large.final_pitch
-          Slant2Svg.slant_2
+        .application_large.application_large--final
+          Slant2Svg.slant.slant_2
           .application_large_date 3/3
           .application_large_text Final pitch
-          .explanation
+          .explanation.explanation--final
             .explanation_text ビデオ通話で最終発表
 
 

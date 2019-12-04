@@ -77,7 +77,7 @@ export default {
   font-size: 1.8rem;
 }
 
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: $md) {
   .OneFeature {
     width: 240px;
   }
@@ -91,7 +91,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $tb) {
   .feature_title {
     font-size: 3.2rem;
   }
@@ -100,22 +100,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 640px) {
-  .OneFeature_side {
-    width: 378px;
-    .feature_logo {
-      margin-right: 40px;
-    }
-  }
-  .feature_title {
-    font-size: 2.8rem;
-  }
-  .feature_discription {
-    font-size: 1.4rem;
-  }
-}
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $sm) {
   .OneFeature_side {
     width: 294px;
     .feature_logo {
