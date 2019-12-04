@@ -25,7 +25,7 @@ export default {
   padding-top: 200px;
   height: 100%;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $sm) {
   .back_white {
     padding-top: 0;
     max-height: 1000px;

@@ -23,7 +23,7 @@ $final_pitch_width: 26%;
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: $md) {
   $pitch_margin_left: 0;
   $final_pitch_width: 20%;
   .final_pitch {
@@ -46,6 +46,8 @@ $final_pitch_width: 26%;
     @include flex();
     margin-top: 40px;
     &__txt {
+      flex-grow: 0;
+      flex-shrink: 0;
       font-weight: $weight-thin;
       font-size: 2.65vw;
     }
@@ -84,7 +86,7 @@ $final_pitch_width: 26%;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $sm) {
   .SecConsept {
     margin-top: 40px;
   }

@@ -123,7 +123,7 @@ a.header_menu_link_title:link {
   text-decoration-line: none;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: $sm) {
   $header-height: 64px;
   .header_menu_link {
     margin: 0;

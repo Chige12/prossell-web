@@ -51,7 +51,7 @@ a:visited {
   }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: $md) {
   // md
   .container {
     width: 80%;
@@ -60,7 +60,7 @@ a:visited {
     }
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: $tb) {
   // md
   .container {
     .main_wrapper {
@@ -68,19 +68,13 @@ a:visited {
     }
   }
 }
-@media screen and (max-width: 640px) {
+@media screen and (max-width: $sm) {
   // md
   .container {
+    width: calc(100% - 40px);
     .main_wrapper {
       width: 100%;
     }
-  }
-}
-
-@media screen and (max-width: 450px) {
-  // sm
-  .container {
-    width: calc(100% - 40px);
   }
 }
 </style>
