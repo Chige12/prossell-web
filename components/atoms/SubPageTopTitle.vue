@@ -34,10 +34,10 @@ export default {
   @include absolute($top: 0, $left: 0);
   display: block;
   &_white {
-    width: 32%;
+    width: 24%;
   }
   &_grad {
-    width: 20%;
+    width: 16%;
   }
 }
 .top_title {
