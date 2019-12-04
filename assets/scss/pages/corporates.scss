@@ -72,6 +72,7 @@
 @media screen and (max-width: $md) {
   .for_corp_message {
     font-size: 1.8rem;
+    text-align: left;
   }
   .pran_table {
     .center {
@@ -89,16 +90,14 @@
 }
 
 @media screen and (max-width: $sm) {
-  .for_corp_message {
-    font-size: 1.6rem;
-  }
-  .pran_discription {
-    font-size: 1.6rem;
-  }
+  .for_corp_message,
+  .pran_discription,
   .pran_contact_message {
     font-size: 1.6rem;
+    text-align: left;
   }
   .pran_table {
+    margin: 20px 0 30px;
     .center {
       font-size: 2rem;
     }

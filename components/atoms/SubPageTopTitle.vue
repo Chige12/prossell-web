@@ -56,4 +56,52 @@ export default {
 .top_title_margin {
   height: 120px;
 }
+
+@media screen and (max-width: $md) {
+  .background_tri {
+    &_white {
+      width: 50%;
+    }
+    &_grad {
+      width: 36%;
+    }
+  }
+  .top_title {
+    top: 88px;
+    .logo_svg {
+      width: calc(20vw + 200px);
+    }
+    .title {
+      margin-top: -8px;
+      font-size: calc(3vw + 26px);
+    }
+  }
+  .top_title_margin {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .background_tri {
+    &_white {
+      width: 56%;
+    }
+    &_grad {
+      width: 42%;
+    }
+  }
+  .top_title {
+    top: 74px;
+    .logo_svg {
+      width: calc(22vw + 220px);
+    }
+    .title {
+      margin-top: -8px;
+      font-size: calc(3.2vw + 30px);
+    }
+  }
+  .top_title_margin {
+    height: 70px;
+  }
+}
 </style>
