@@ -30,7 +30,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .Footer {
-  margin-top: 40px;
+  margin-top: 120px;
 }
 
 .before_footer {

@@ -31,7 +31,7 @@ export default {
       menu: false,
       links: [
         { to: '/', name: 'About' },
-        { to: '/', name: '企業の方へ' }
+        { to: '/corporates', name: '企業の方へ' }
       ]
     }
   },
@@ -65,6 +65,21 @@ $header-height: 80px;
   margin-right: 20px;
   &:last-child {
     margin-right: 0;
+  }
+  &_title {
+    position: relative;
+    &::after {
+      content: '';
+      @include absolute($bottom: -4px, $left: 0, $right: 0);
+      width: 0%;
+      height: 4px;
+      background: $theme-gradient;
+    }
+  }
+  .nuxt-link-exact-active {
+    &::after {
+      width: 100%;
+    }
   }
 }
 
