@@ -27,13 +27,13 @@ export default {
         {
           theme: '審査の視点',
           content:
-            '<p>実現性、 社会貢献度、 市場の成長性、 </p><p>独創性、 スケジュール達成度<sup>※</p><p class="caution" style="font-size: 1.0rem; position: absolute; left: 6px;">※スケジュールに沿ったタスクの達成率も評価に加味されます。</p>'
+            '<p>実現性、 社会貢献度、 市場の成長性、 独創性、 スケジュール達成度<sup>※</p><p class="caution" style="font-size: 1.0rem; position: absolute; left: 6px;">※スケジュールに沿ったタスクの達成率も評価に加味されます。</p>'
         },
         { theme: '審査員', content: '<p>未定</p>' },
         {
           theme: '運営',
           content:
-            '<p>主催：<a>Prossell</a></p><p>協力：<a href="https://n-wakamonokikou.net/">ながおか・若者・しごと機構</a></p>'
+            '<p>主催：<a>Prossell</a>　協力：<a href="https://n-wakamonokikou.net/">ながおか・若者・しごと機構</a></p>'
         }
       ]
     }
