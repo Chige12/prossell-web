@@ -21,7 +21,7 @@ export default {
   data() {
     return {
       hashtag: 'オンコン',
-      facebook_id: '',
+      facebook_id: '2518345798280802',
       recommend: false
     }
   },
