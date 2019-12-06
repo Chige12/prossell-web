@@ -2,15 +2,18 @@
 //   margin: 0 0px 50px 0px;
 // }
 
-.SectionTitle{
-  margin-bottom: 0px;
-}
+// .SectionTitle{
+//   margin-bottom: 0px;
+// }
 
 .feature_content{
   @include flex($wrap: wrap, $justifyContent: center, $alignItems: center);
 }
 
 @media screen and (max-width: 1024px) {
+  .SectionTitle{
+    margin-bottom: 0px;
+  }
   .feature_topic {
     margin-top: 60px;
   }
@@ -22,6 +25,7 @@
 }
 
 @media screen and (max-width: $sm) {
+
   .feature_topic {
     margin-top: 40px;
   }
