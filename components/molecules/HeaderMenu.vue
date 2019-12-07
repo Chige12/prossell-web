@@ -66,10 +66,12 @@ $header-height: 80px;
 .header_menu_link {
   margin-right: 20px;
   &:last-child {
-    margin-right: 0;
+    margin-right: 0px;
   }
   &_title {
     position: relative;
+    font-size: 1.8rem;
+    padding: 0 4px;
     &::after {
       content: '';
       @include absolute($bottom: -4px, $left: 0, $right: 0);
