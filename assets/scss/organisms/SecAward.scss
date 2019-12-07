@@ -8,6 +8,7 @@
     @include flex($justifyContent: flex-start, $alignItems: flex-start);
     padding-bottom: 24px;
     &__property {
+      flex-shrink: 0;
       font-weight: $weight-thin;
       font-size: 4rem;
       width: 28%;
@@ -98,17 +99,21 @@
     }
   }
   .award_txt {
-    width: 100%;
+    width: auto;
+    margin: 0 auto;
     &__row {
       padding-bottom: 18px;
       &__property {
         font-weight: $weight-thin;
-        font-size: 2.3rem;
+        font-size: 2.6rem;
       }
       &__contents {
         padding-top: 8px;
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 1.5;
+        p {
+          margin-bottom: 4px;
+        }
         td {
           padding-right: 4px;
         }

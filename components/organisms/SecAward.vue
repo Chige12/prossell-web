@@ -11,7 +11,7 @@
             .award_txt__row__property 表彰式
             .award_txt__row__contents
               p 2020/03/14、新潟県長岡市 <a href="https://www.nadec-base.jp/">NaDeC BASE</a> にて開催
-              | 優秀者には交通費・宿泊費等、上限2万円の支給
+              p 優秀者には交通費・宿泊費等、上限2万円の支給
           .award_txt__row
             .award_txt__row__property 賞
             .award_txt__row__contents
