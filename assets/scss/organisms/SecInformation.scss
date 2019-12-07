@@ -8,29 +8,35 @@ $shift: 34.4px;
 }
 
 .information_list{
-  @include flex($alignItems: center, $justifyContent: flex-start);
+  @include flex($alignItems: flex-start, $justifyContent: flex-start);
   margin: 48px 0;
 
   &_theme {
     font-weight: $weight-thin;
-    font-size: 2.8rem;
-    width: 184px;
+    font-size: 3rem;
+    width: 200px;
+    flex-grow: 0;
+    flex-shrink: 0;
   }
 
   &_content {
+    padding-top: 0.8rem;
     font-size: 1.8rem;
     position: relative;
-    display: inline-flex;
-    sup {
-      top: 0.5em;
+    padding-left:0.4em;
+    text-indent:-0.4em;
+
+    br {
+      display: none;
     }
 
     &--text {
       display: inline;
     }
     &--caution {
-      font-size: 1.0rem;
-      @include absolute($left: 6px, $top: 24px);
+      font-size: 1.4rem;
+      padding-left:0.8em;
+      text-indent:-0.4em;
     }
     &--coorporate {
       margin-left: 1.8rem;
@@ -48,49 +54,38 @@ $shift: 34.4px;
 
 @media screen and (max-width: $md) {
   .information_lists{
-    margin-left: 100px;
+    margin-left: 8%;
   }
 
   .information_list{
     &_theme {
-      font-size: 2.4rem;
-      width: 152px;
-    }
-
-    &_content {
-      font-size: 1.6rem;
+      font-size: 2.8rem;
     }
   }
 }
 
 @media screen and (max-width: $tb) {
   .information_lists{
-    margin-left: 10%;
-  }
-  .information_list{
-    &_theme {
-      font-size: 2.0rem;
-      width: 120px;
-    }
-    &_content {
-      font-size: 1.4rem;
-    }
-  }
-}
-
-@media screen and (max-width: 860px) {
-  .information_lists{
     margin-left: 0;
   }
-  .information_list_theme{
-    font-size: 1.8rem;
-    width: 100px;
-  }
-}
-
-@media screen and (max-width: 740px) {
-  .container {
-    width: 92vw
+  .information_list{
+    display: block;
+    &_theme {
+      font-size: 2.6rem;
+      width: 160px;
+    }
+    &_content {
+      padding-left: 1em;
+    }
+    &_content{
+      &--coorporate {
+        display: block;
+        margin-top: 4px;
+        margin-left: 0;
+        padding-left:0.4em;
+        text-indent:-0.4em;
+      }
+    }
   }
 }
 
@@ -114,9 +109,11 @@ $shift: 34.4px;
     align-items: start;
 
     &_content{
-      width: 446px;
+      width: auto;
       margin: 8px 0 8px 16px;
       display: inline-block;
+      padding-left: 0;
+      text-indent: 0;
       sup {
         top: -0.5em;
       }
@@ -126,11 +123,12 @@ $shift: 34.4px;
         margin-bottom: 4px;
       }
       &--caution {
-        @include absolute($left: 0px, $top: 48px);
+        padding-left: 0;
+        text-indent: 0;
       }
       &--coorporate {
-        margin-top: 4px;
-        margin-left: 0;
+        padding-left: 0;
+        text-indent: 0;
       }
     }
   }
