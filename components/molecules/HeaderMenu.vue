@@ -7,8 +7,10 @@
             MenuSvg.menu_svg
           .menu_close_btn(v-if="menu" @click="CloseMenu()")
           .menu_links_box(:class="{'menu_links_box--open':menu}")
+            .header_menu_link
+              nuxt-link(to="/" @click.native="CloseMenu()").header_menu_link_title トップページ
             .header_menu_link(v-for="(link,link_id) in links" :key="`header_menu_link_${link_id}`")
-              nuxt-link(:to="link.to").header_menu_link_title {{link.name}}
+              nuxt-link(:to="link.to" @click.native="CloseMenu()").header_menu_link_title {{link.name}}
         .header_menu_links(v-else)
           .header_menu_link(v-for="(link,link_id) in links" :key="`header_menu_link_${link_id}`")
             nuxt-link(:to="link.to").header_menu_link_title {{link.name}}
@@ -29,11 +31,11 @@ export default {
   data() {
     return {
       menu: false,
-      links: [
-        { to: '/', name: 'About' },
-        { to: '/corporates', name: '企業の方へ' }
-      ]
+      links: [{ to: '/corporates', name: '企業の方へ' }]
     }
+  },
+  mounted() {
+    this.CloseMenu()
   },
   methods: {
     OpenMenu() {
@@ -140,6 +142,9 @@ a.header_menu_link_title:link {
   .header_menu_link_title {
     font-size: 2.4rem;
     color: $white;
+  }
+  .nuxt-link-exact-active {
+    color: lighten($link-txt, 20%);
   }
 }
 </style>

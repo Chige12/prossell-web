@@ -19,7 +19,8 @@
           p.information_list_theme 運営
           .information_list_content
             p.information_list_content--sponsor 主催：
-              a(href = "") Prossell
+              span Prossell
+              //- a(href = "") Prossell
             p.information_list_content--coorporate 協力：
               a(href = "https://n-wakamonokikou.net/") ながおか・若者・しごと機構
 
