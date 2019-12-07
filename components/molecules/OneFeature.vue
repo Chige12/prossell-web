@@ -4,14 +4,16 @@
     Icon1OnlineSvg.feature_logo(v-if="logo === 0")
     Icon2LinkSvg.feature_logo(v-if="logo === 1")
     Icon3ProcessSvg.feature_logo(v-if="logo === 2")
-    .feature_discription(v-html="discription")
+    .feature_discription
+      p(v-for="(dis,dis_key) in discription" :key="`OneFeaDis_${dis_key}`") {{dis}}
   .OneFeature_side(v-else)
     Icon1OnlineSvg.feature_logo(v-if="logo === 0")
     Icon2LinkSvg.feature_logo(v-if="logo === 1")
     Icon3ProcessSvg.feature_logo(v-if="logo === 2")
     .OneFeature_side_text
       .feature_title {{title}}
-      .feature_discription(v-html="discription")
+      .feature_discription
+        p(v-for="(dis,dis_key) in discription" :key="`OneFeaDis_${dis_key}`") {{dis}}
 
 </template>
 <script>
@@ -37,19 +39,18 @@ export default {
       default: -1
     },
     discription: {
-      type: String,
-      default: ''
+      type: Array,
+      default: () => []
     }
   }
 }
 </script>
 <style lang="scss" scoped>
 .OneFeature {
-  width: 310px;
+  width: auto;
   text-align: center;
-  margin: 0 10px;
   &_side {
-    width: 456px;
+    width: auto;
     @include flex();
     flex-direction: row;
     .feature_logo {
@@ -64,6 +65,8 @@ export default {
 .feature_title {
   font-weight: $weight-thin;
   font-size: 3.2rem;
+  display: block;
+  width: auto;
 }
 
 .feature_logo {
@@ -73,13 +76,15 @@ export default {
 }
 
 .feature_discription {
+  width: auto;
   margin-top: 20px;
   font-size: 1.8rem;
+  line-height: 1.8;
 }
 
 @media screen and (max-width: $md) {
   .OneFeature {
-    width: 240px;
+    width: auto;
   }
   .feature_title {
     font-size: 2.8rem;
@@ -102,17 +107,18 @@ export default {
 
 @media screen and (max-width: $sm) {
   .OneFeature_side {
-    width: 294px;
+    width: auto;
     .feature_logo {
       width: 70px;
       margin-right: 20px;
     }
   }
   .feature_title {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
   .feature_discription {
-    font-size: 1.2rem;
+    font-size: calc(1vw + 10px);
+    line-height: 1.6;
   }
 }
 </style>

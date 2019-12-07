@@ -79,7 +79,7 @@
 @media screen and (max-width: $md) {
   .logo {
     margin-top: 1vw;
-    width: 43%;
+    width: 50%;
     padding-bottom: 4px;
   }
   .catch_copy {
@@ -113,7 +113,8 @@
     display: block;
   }
   .logo {
-    width: 280px;
+    max-width: 420px;
+    width: 80%;
   }
   .right_contents_wrapper {
     margin-top: 32px;
@@ -121,8 +122,8 @@
     text-align: center;
   }
   .catch_copy {
-    font-size: 2.4rem;
-    margin-bottom: 18px;
+    font-size: 6.4vw;
+    margin-bottom: 5vw;
     br {
       display: none;
     }

@@ -114,10 +114,10 @@ export default {
       @include flex($justifyContent: center);
       padding: 0px 28px;
       transition: 0.3s $ease-out-1;
-      filter: drop-shadow(0 0 0 rgba($black, 0));
+      box-shadow: 0 0 0 rgba($black, 0);
       &:hover {
         transform: translateY(-4px);
-        filter: drop-shadow(0 2px 4px rgba($black, 0.4));
+        box-shadow: 0 2px 4px rgba($black, 0.4);
       }
       &__logo {
         width: 3.2rem;
