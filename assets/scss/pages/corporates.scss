@@ -4,12 +4,12 @@
   text-align: center;
   font-size: 2rem;
 }
-.pran_discription {
+.plan_discription {
   text-align: center;
   margin: 20px 0;
   font-size: 1.8rem;
 }
-.pran_table {
+.plan_table {
   margin: 40px 0;
   table {
     margin: auto;
@@ -43,7 +43,7 @@
   }
 }
 
-.pran_contact {
+.plan_contact {
   text-align: center;
   &_email {
     margin: 16px 0;
@@ -74,7 +74,7 @@
     font-size: 1.8rem;
     text-align: left;
   }
-  .pran_table {
+  .prlan_table {
     .center {
       font-size: 2.4rem;
     }
@@ -91,12 +91,12 @@
 
 @media screen and (max-width: $sm) {
   .for_corp_message,
-  .pran_discription,
-  .pran_contact_message {
+  .prlan_discription,
+  .prlan_contact_message {
     font-size: 1.6rem;
     text-align: left;
   }
-  .pran_table {
+  .prlan_table {
     margin: 20px 0 30px;
     .center {
       font-size: 2rem;
@@ -110,7 +110,7 @@
       }
     }
   }
-  .pran_contact_email {
+  .prlan_contact_email {
     .email_address {
       font-size: 2.4rem;
     }

@@ -3,20 +3,20 @@
     SectionTitle(:title="'Sponsors'")
     .container(v-if="publish")
       .sponsors_list
-        .sponsor_box(v-for="(spA, spA_key) in sponsors_A" :key="`spA_key${spA_key}`").pran_A
+        .sponsor_box(v-for="(spA, spA_key) in sponsors_A" :key="`spA_key${spA_key}`").plan_A
           a(:href="spA.link")
             .sponsor_logo
-            .sponsor_name <span>Pran A</span> {{spA.name}}
+            .sponsor_name <span>Plan A</span> {{spA.name}}
       .sponsors_list
-        .sponsor_box(v-for="(spB, spB_key) in sponsors_B" :key="`spB_key${spB_key}`").pran_B
+        .sponsor_box(v-for="(spB, spB_key) in sponsors_B" :key="`spB_key${spB_key}`").plan_B
           a(:href="spB.link")
             .sponsor_logo
-            .sponsor_name <span>Pran B</span> {{spB.name}}
+            .sponsor_name <span>Plan B</span> {{spB.name}}
       .sponsors_list
-        .sponsor_box(v-for="(spC, spC_key) in sponsors_C" :key="`spC_key${spC_key}`").pran_C
+        .sponsor_box(v-for="(spC, spC_key) in sponsors_C" :key="`spC_key${spC_key}`").plan_C
           a(:href="spC.link")
             .sponsor_logo
-            .sponsor_name <span>Pran C</span> {{spC.name}}
+            .sponsor_name <span>Plan C</span> {{spC.name}}
 
     .container(v-else)
       nuxt-link(to="/corporates")
@@ -25,8 +25,8 @@
       .sponsor_link
         h3 【企業の皆様へ】
         p スポンサーは随時募集しています。
-        p スポンサー用の情報については 
-          nuxt-link(to="/corporates") 企業の方へ 
+        p スポンサー用の情報については
+          nuxt-link(to="/corporates") 企業の方へ
           | をご覧ください。
 </template>
 <script>
@@ -69,13 +69,13 @@ export default {
   padding: 8px;
   margin-bottom: 16px;
 }
-.pran_A {
+.plan_A {
   width: 50%;
 }
-.pran_B {
+.plan_B {
   width: 33.3333%;
 }
-.pran_C {
+.plan_C {
   width: 25%;
 }
 
@@ -126,24 +126,24 @@ a:visited {
 }
 
 @media screen and (max-width: $sm) {
-  .pran_A {
+  .plan_A {
     width: 100%;
   }
-  .pran_B {
+  .plan_B {
     width: 50%;
   }
-  .pran_C {
+  .plan_C {
     width: 33.3333%;
   }
-  .pran_A .sponsor_name {
+  .plan_A .sponsor_name {
     font-size: 1.8rem;
     span {
       font-size: 1.5rem;
       padding-right: 12px;
     }
   }
-  .pran_B .sponsor_name,
-  .pran_C .sponsor_name {
+  .plan_B .sponsor_name,
+  .plan_C .sponsor_name {
     span {
       display: block;
       padding-right: 0;

@@ -7,8 +7,8 @@
     SectionTitle(:title="'Plans'")
     .container
       .main_wrapper
-        .pran_discription オンコンでは、3つのスポンサープランを提案させていただいております。
-        .pran_table
+        .plan_discription オンコンでは、3つのスポンサープランを提案させていただいております。
+        .plan_table
           table
             thead
               th.contents
@@ -16,14 +16,14 @@
               th.center.center_h Plan B
               th.center.center_h Plan C
             tbody
-              tr.pran_table_tr(v-for="trk in table_data.length" :key="`corp_trk${trk}`")
+              tr.plan_table_tr(v-for="trk in table_data.length" :key="`corp_trk${trk}`")
                 td.contents {{table_data[trk-1][0]}}
                 td.center.center_d {{table_data[trk-1][1]}}
                 td.center.center_d {{table_data[trk-1][2]}}
                 td.center.center_d {{table_data[trk-1][3]}}
-        .pran_contact
-          .pran_contact_message 価格設定等の詳細情報、資料請求、ご相談等はこちらのメールアドレスまでご連絡ください。
-          .pran_contact_email
+        .plan_contact
+          .plan_contact_message 価格設定等の詳細情報、資料請求、ご相談等はこちらのメールアドレスまでご連絡ください。
+          .plan_contact_email
             .email_address support◇prossell.jp
             .annotation ◇を@に変えて送信してください。
     Footer
