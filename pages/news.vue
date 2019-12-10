@@ -7,10 +7,11 @@
       .wrapper
         .news_list
           .news(v-for="(news, news_key) in latestNews" :key="`news_${news_key}`")
-            .news_wrapper
-              .title {{news.title}}
-              .date {{news.date}}
-            .news_detaile {{news.detaile}}
+              .news_wrapper
+                a.title(v-if="news.link" :href="news.link") {{news.title}}
+                .title(v-else) {{news.title}}
+                .date {{news.date}}
+              .news_detaile {{news.detaile}}
         .twitter_timeline
           <a class="twitter-timeline" data-width="400" href="https://twitter.com/Prossell_JP?ref_src=twsrc%5Etfw">Tweets by Prossell_JP</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     Footer
@@ -41,6 +42,11 @@ export default {
           title: '参加者応募が開始されました！',
           detaile:
             'スポンサー情報を更新し、新しくAboutページとNewsページを追加しました。'
+        },
+        {
+          date: '2019/12/11',
+          title: '高専マガジンにご紹介いただきました！',
+          link: 'http://kosen-magazine.com/about-prossell/'
         }
       ]
     }
@@ -102,6 +108,8 @@ export default {
     color: $gray-txt;
     flex-shrink: 0;
     margin-left: 4px;
+    display: block;
+    text-decoration: none;
   }
 }
 

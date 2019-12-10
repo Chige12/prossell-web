@@ -43,7 +43,7 @@ export default {
           link: 'https://twitter.com/Kiki_Prossell'
         },
         {
-          icon: 'no_icon',
+          icon: 'hara',
           name: '徳山高専\n原洋介 特命准教授',
           role: 'アドバイザー',
           link: 'https://www.facebook.com/satetsuman'
@@ -68,7 +68,7 @@ export default {
           name: '宮地篤士',
           link: 'https://twitter.com/tussy5969'
         },
-        { icon: 'no_icon', name: '五味', link: '' },
+        { icon: 'gomi', name: '五味', link: '' },
         {
           icon: 'shion_watanabe',
           name: '渡辺紫音',
@@ -94,7 +94,7 @@ export default {
           name: 'ラキシス',
           link: 'https://twitter.com/L4khesis'
         },
-        { icon: 'no_icon', name: '中野', link: '' },
+        { icon: 'nakano', name: '中野', link: '' },
         { icon: 'no_icon', name: '風間', link: '' },
         { icon: 'yuzu', name: 'yuzu', link: '' }
       ]
