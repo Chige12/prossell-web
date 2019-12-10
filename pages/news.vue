@@ -100,6 +100,8 @@ export default {
   .date {
     font-size: 1.5rem;
     color: $gray-txt;
+    flex-shrink: 0;
+    margin-left: 4px;
   }
 }
 
@@ -111,5 +113,41 @@ export default {
 
 .twitter_timeline {
   flex-shrink: 0;
+}
+
+@media screen and (max-width: $md) {
+  .news_message {
+    font-size: 1.8rem;
+  }
+  .twitter_timeline {
+    width: 320px;
+  }
+}
+@media screen and (max-width: $tb) {
+  .news_message {
+    font-size: 1.6rem;
+  }
+  .wrapper {
+    display: block;
+  }
+  .news_list {
+    width: 100%;
+  }
+  .news_wrapper {
+    .title {
+      font-size: 1.7rem;
+    }
+    .date {
+      font-size: 1.4rem;
+    }
+  }
+  .news_detaile {
+    font-size: 1.45rem;
+  }
+  .twitter_timeline {
+    margin-top: 48px;
+    width: 100%;
+    text-align: center;
+  }
 }
 </style>
