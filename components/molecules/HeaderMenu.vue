@@ -33,6 +33,7 @@ export default {
       menu: false,
       links: [
         { to: '/about', name: 'About' },
+        { to: '/news', name: 'News' },
         { to: '/corporates', name: '企業の方へ' }
       ]
     }
