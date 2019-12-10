@@ -169,4 +169,31 @@ a:visited {
   text-decoration: none;
   color: $black-txt;
 }
+
+@media screen and (max-width: $md) {
+  .member_wrapper {
+    min-width: 25%;
+    font-size: 1.6rem;
+  }
+  .about_message {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  .member_icon {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: $sm) {
+  .about_message {
+    font-size: 1.6rem;
+  }
+  .member_wrapper {
+    min-width: 30%;
+  }
+  .member_icon {
+    width: 80px;
+    height: 80px;
+  }
+}
 </style>
