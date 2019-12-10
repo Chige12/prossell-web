@@ -31,7 +31,10 @@ export default {
   data() {
     return {
       menu: false,
-      links: [{ to: '/corporates', name: '企業の方へ' }]
+      links: [
+        { to: '/about', name: 'About' },
+        { to: '/corporates', name: '企業の方へ' }
+      ]
     }
   },
   mounted() {
