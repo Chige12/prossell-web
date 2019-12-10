@@ -2,26 +2,27 @@
   .SecSponsors
     SectionTitle(:title="'Sponsors'")
     .container(v-if="publish")
-      .sponsors_list
+      .sponsors_list(v-if="sponsors_A")
         .sponsor_box(v-for="(spA, spA_key) in sponsors_A" :key="`spA_key${spA_key}`").pran_A
           a(:href="spA.link")
-            .sponsor_logo
+            img.sponsor_logo(v-if="spA.logo" :src="require(`~/assets/sponsor_imgs/${spA.logo}`)")
             .sponsor_name <span>Pran A</span> {{spA.name}}
-      .sponsors_list
+      .sponsors_list(v-if="sponsors_B")
         .sponsor_box(v-for="(spB, spB_key) in sponsors_B" :key="`spB_key${spB_key}`").pran_B
           a(:href="spB.link")
-            .sponsor_logo
+            img.sponsor_logo(v-if="spB.logo" :src="require(`~/assets/sponsor_imgs/${spB.logo}`)")
             .sponsor_name <span>Pran B</span> {{spB.name}}
-      .sponsors_list
+      .sponsors_list(v-if="sponsors_C")
         .sponsor_box(v-for="(spC, spC_key) in sponsors_C" :key="`spC_key${spC_key}`").pran_C
           a(:href="spC.link")
-            .sponsor_logo
+            img.sponsor_logo(v-if="spC.logo" :src="require(`~/assets/sponsor_imgs/${spC.logo}`)")
             .sponsor_name <span>Pran C</span> {{spC.name}}
 
     .container(v-else)
       nuxt-link(to="/corporates")
         CommingSoonSvg.comming_soon
       p.prease_weit 情報公開までもうしばらくお待ちください。
+    .container
       .sponsor_link
         h3 【企業の皆様へ】
         p スポンサーは随時募集しています。
@@ -40,21 +41,37 @@ export default {
   },
   data() {
     return {
-      publish: false,
+      publish: true,
       sponsors_A: [
-        { link: '', logo: '', name: '〇〇株式会社' },
-        { link: '', logo: '', name: '〇〇株式会社' }
+        { link: 'https://fuller-inc.com/', logo: '', name: 'フラー株式会社' },
+        {
+          link: 'https://kosen-career.tech/',
+          logo: '',
+          name: '株式会社 高専キャリア教育研究所'
+        }
       ],
-      sponsors_B: [
-        { link: '', logo: '', name: '〇〇株式会社' },
-        { link: '', logo: '', name: '〇〇株式会社' },
-        { link: '', logo: '', name: '〇〇株式会社' }
-      ],
+      sponsors_B: [],
       sponsors_C: [
-        { link: '', logo: '', name: '〇〇株式会社' },
-        { link: '', logo: '', name: '〇〇株式会社' },
-        { link: '', logo: '', name: '〇〇株式会社' },
-        { link: '', logo: '', name: '〇〇株式会社' }
+        {
+          link: 'http://k-matsui-gumi.co.jp/',
+          logo: 'matuigumi.png',
+          name: '株式会社 松井組'
+        },
+        {
+          link: 'https://itachi.co.jp/',
+          logo: 'itachi.png',
+          name: '株式会社イタチ'
+        },
+        {
+          link: 'https://csllc.co.jp/',
+          logo: 'cs.png',
+          name: 'CS合同会社（CS.llc）'
+        },
+        {
+          link: 'https://www.nihon-samicon.co.jp/',
+          logo: 'samicon.png',
+          name: '日本サミコン株式会社'
+        }
       ]
     }
   }
@@ -67,7 +84,7 @@ export default {
 }
 .sponsor_box {
   padding: 8px;
-  margin-bottom: 16px;
+  margin-bottom: 36px;
 }
 .pran_A {
   width: 50%;
