@@ -26,8 +26,8 @@
       .sponsor_link
         h3 【企業の皆様へ】
         p スポンサーは随時募集しています。
-        p スポンサー用の情報については 
-          nuxt-link(to="/corporates") 企業の方へ 
+        p スポンサー用の情報については
+          nuxt-link(to="/corporates") 企業の方へ
           | をご覧ください。
 </template>
 <script>
