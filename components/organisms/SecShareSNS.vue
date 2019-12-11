@@ -17,6 +17,9 @@
             a(href="https://twitter.com/Prossell_JP").check_link.check_link__twitter
               TwitterWhiteSvg.check_link__logo
               .check_link__txt @Prossell_JP
+            a(href="https://www.facebook.com/prossell.jp").check_link.check_link__facebook
+              FacebookWhiteSvg.check_link__logo
+              .check_link__txt @prossell.jp
             a(href="https://www.instagram.com/Prossell_official/").check_link.check_link__instagram
               InstagramWhiteSvg.check_link__logo
               .check_link__txt @prossell_official
@@ -29,6 +32,7 @@ import TwitterSvg from '~/assets/images/twitter.svg?inline'
 import FacebookSvg from '~/assets/images/facebook.svg?inline'
 import LineSvg from '~/assets/images/line.svg?inline'
 import TwitterWhiteSvg from '~/assets/images/twitter_white.svg?inline'
+import FacebookWhiteSvg from '~/assets/images/facebook_white.svg?inline'
 import InstagramWhiteSvg from '~/assets/images/instagram_white.svg?inline'
 
 export default {
@@ -38,6 +42,7 @@ export default {
     FacebookSvg,
     LineSvg,
     TwitterWhiteSvg,
+    FacebookWhiteSvg,
     InstagramWhiteSvg
   },
   data() {
@@ -130,6 +135,9 @@ export default {
       }
       &__twitter {
         background-color: $twitter;
+      }
+      &__facebook {
+        background-color: $facebook;
       }
       &__instagram {
         background: linear-gradient(

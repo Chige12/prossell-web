@@ -47,9 +47,15 @@ export default {
       table_data: [
         ['オンコンの課題テーマの提供', '○', '×', '×'],
         ['学生へのコンタクト', '○', '○', '×'],
-        ['ポスターやWebサイト等への社名掲載', '○', '○', '○'],
+        ['Webサイト等への社名掲載', '○', '○', '○'],
         ['SNS等での社名の掲載', '○', '○', '○']
       ]
+    }
+  },
+  head() {
+    return {
+      title: 'For Corporates',
+      titleTemplate: '%s - ONLINE INTERN CONTEST 2020'
     }
   }
 }

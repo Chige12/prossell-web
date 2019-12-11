@@ -10,6 +10,7 @@
       SecInformation
       SecVision
     .separator
+      SankaOubo.sankaoubo_box_parent
     SecAward
     SecShareSNS
     SecSponsors
@@ -32,6 +33,7 @@ import SecAward from '~/components/organisms/SecAward.vue'
 import SecShareSNS from '~/components/organisms/SecShareSNS.vue'
 import SecSponsors from '~/components/organisms/SecSponsors.vue'
 import Footer from '~/components/organisms/Footer.vue'
+import SankaOubo from '~/components/atoms/SankaOubo.vue'
 
 export default {
   components: {
@@ -46,7 +48,8 @@ export default {
     SecAward,
     SecShareSNS,
     SecSponsors,
-    Footer
+    Footer,
+    SankaOubo
   },
   head() {
     return {
@@ -61,12 +64,25 @@ export default {
   min-height: 100vh;
 }
 .separator {
+  position: relative;
   background: $theme-gradient;
-  height: 100px;
+  height: 200px;
   width: 100%;
 }
 .tri_mid_wrapper {
   position: relative;
   overflow: hidden;
+}
+.sankaoubo_box_parent {
+  @include absolute(0, 0, 0, 0);
+  margin: auto;
+  width: min-content;
+  height: min-content;
+  z-index: 0;
+  box-shadow: 0 0 32px 16px $white;
+  transition: 0.5s $ease-out-1;
+  &:hover {
+    box-shadow: 0 0 32px 0px $white;
+  }
 }
 </style>
