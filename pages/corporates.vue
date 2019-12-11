@@ -51,6 +51,12 @@ export default {
         ['SNS等での社名の掲載', '○', '○', '○']
       ]
     }
+  },
+  head() {
+    return {
+      title: 'For Corporates',
+      titleTemplate: '%s - ONLINE INTERN CONTEST 2020'
+    }
   }
 }
 </script>

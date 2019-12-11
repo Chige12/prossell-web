@@ -12,6 +12,7 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@nuxtjs/markdownit": "^1.2.7",
     "@nuxtjs/svg": "^0.1.6",
     "nuxt": "^2.0.0",
     "nuxt-mq": "^2.0.1",

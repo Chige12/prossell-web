@@ -1,12 +1,12 @@
 <template lang="pug">
-  .corporates
+  .news_vue
     HeaderMenu()
     SubPageTopTitle(:title="'News'")
     .container
       .news_message オンコン(略称)に関する最新情報や更新情報をお届けします。
       .wrapper
         .news_list
-          .news(v-for="(news, news_key) in latestNews" :key="`news_${news_key}`")
+          .news(v-for="(news, news_key) in latestNews" :key="`news_${news_key}`" v-if="news.pub")
               .news_wrapper
                 a.title(v-if="news.link" :href="news.link") {{news.title}}
                 .title(v-else) {{news.title}}
@@ -34,16 +34,19 @@ export default {
     return {
       news_list: [
         {
+          pub: true,
           date: '2019/12/07',
           title: 'オンコン公式Webサイトを公開しました。'
         },
         {
+          pub: true,
           date: '2019/12/11',
           title: '参加者応募が開始されました！',
           detaile:
             'スポンサー情報を更新し、新しくAboutページとNewsページを追加しました。'
         },
         {
+          pub: false,
           date: '2019/12/11',
           title: '高専マガジンにご紹介いただきました！',
           link: 'http://kosen-magazine.com/about-prossell/'
@@ -54,6 +57,12 @@ export default {
   computed: {
     latestNews() {
       return [...this.news_list].reverse()
+    }
+  },
+  head() {
+    return {
+      title: 'News',
+      titleTemplate: '%s - ONLINE INTERN CONTEST 2020'
     }
   }
 }

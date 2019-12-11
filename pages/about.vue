@@ -1,5 +1,5 @@
 <template lang="pug">
-  .corporates
+  .about
     HeaderMenu()
     SubPageTopTitle(:title="'About Prossell'")
     .container
@@ -54,9 +54,9 @@ export default {
           link: 'https://www.facebook.com/yoka0930'
         },
         {
-          icon: 'no_icon',
+          icon: 'hiroyuki_saito',
           name: '齋藤',
-          link: ''
+          link: 'https://www.facebook.com/bigbosshiro'
         },
         {
           icon: 'chige',
@@ -95,9 +95,15 @@ export default {
           link: 'https://twitter.com/L4khesis'
         },
         { icon: 'nakano', name: '中野', link: '' },
-        { icon: 'no_icon', name: '風間', link: '' },
+        { icon: 'kazama', name: '風間', link: '' },
         { icon: 'yuzu', name: 'yuzu', link: '' }
       ]
+    }
+  },
+  head() {
+    return {
+      title: 'About',
+      titleTemplate: '%s - ONLINE INTERN CONTEST 2020'
     }
   }
 }
