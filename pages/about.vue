@@ -38,7 +38,7 @@ export default {
       members: [
         {
           icon: 'yokoyama_kazuki',
-          name: '横山和輝',
+          name: '横山和輝(kiki)',
           role: '運営代表',
           link: 'https://twitter.com/Kiki_Prossell'
         },
@@ -95,7 +95,7 @@ export default {
           link: 'https://twitter.com/L4khesis'
         },
         { icon: 'nakano', name: '中野', link: '' },
-        { icon: 'kazama', name: '風間', link: '' },
+        { icon: 'kazama', name: '風間鼓太朗', link: '' },
         { icon: 'yuzu', name: 'yuzu', link: '' }
       ]
     }
