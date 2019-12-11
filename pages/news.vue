@@ -46,7 +46,7 @@ export default {
             'スポンサー情報を更新し、新しくAboutページとNewsページを追加しました。'
         },
         {
-          pub: false,
+          pub: true,
           date: '2019/12/11',
           title: '高専マガジンにご紹介いただきました！',
           link: 'http://kosen-magazine.com/about-prossell/'
