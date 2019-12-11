@@ -112,6 +112,7 @@ export default {
   font-size: 2rem;
   cursor: pointer;
   &_icon {
+    flex-shrink: 0;
     width: 30px;
     height: 30px;
     border: 4px solid $link;
@@ -161,5 +162,34 @@ export default {
 :active,
 :focus {
   outline: none;
+}
+
+@media screen and (max-width: $md) {
+  .disclaimer_box {
+    margin-top: 64px;
+    padding: 32px;
+    &_title {
+      p {
+        padding: 8px 32px;
+        font-size: 2.2rem;
+      }
+    }
+  }
+  .disclaimer_checkbox {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (max-width: $sm) {
+  .disclaimer_box {
+    padding: 50px 16px;
+    &_title {
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+  .disclaimer_checkbox {
+    font-size: 1.7rem;
+  }
 }
 </style>
