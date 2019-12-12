@@ -5,17 +5,17 @@
       .sponsors_list(v-if="sponsors_A")
         .sponsor_box(v-for="(spA, spA_key) in sponsors_A" :key="`spA_key${spA_key}`").plan_A
           a(:href="spA.link")
-            img.sponsor_logo(v-if="spA.logo" :src="require(`~/assets/sponsor_imgs/${spA.logo}.png`)")
+            img.sp_logo(v-if="spA.logo" :src="require(`~/assets/sponsor_imgs/${spA.logo}.png`)")
             .sponsor_name <span>Plan A</span> {{spA.name}}
       .sponsors_list(v-if="sponsors_B")
         .sponsor_box(v-for="(spB, spB_key) in sponsors_B" :key="`spB_key${spB_key}`").plan_B
           a(:href="spB.link")
-            img.sponsor_logo(v-if="spB.logo" :src="require(`~/assets/sponsor_imgs/${spB.logo}.png`)")
+            img.sp_logo(v-if="spB.logo" :src="require(`~/assets/sponsor_imgs/${spB.logo}.png`)")
             .sponsor_name <span>Plan B</span> {{spB.name}}
       .sponsors_list(v-if="sponsors_C")
         .sponsor_box(v-for="(spC, spC_key) in sponsors_C" :key="`spC_key${spC_key}`").plan_C
           a(:href="spC.link")
-            img.sponsor_logo(v-if="spC.logo" :src="require(`~/assets/sponsor_imgs/${spC.logo}.png`)")
+            img.sp_logo(v-if="spC.logo" :src="require(`~/assets/sponsor_imgs/${spC.logo}.png`)")
             .sponsor_name <span>Plan C</span> {{spC.name}}
 
     .container(v-else)
@@ -100,7 +100,7 @@ export default {
   width: 25%;
 }
 
-.sponsor_logo {
+.sp_logo {
   display: block;
   width: 100%;
   height: 100%;
