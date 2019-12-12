@@ -1,5 +1,5 @@
 <template lang="pug">
-  .posterDownload
+  .posterDownload#poster
     SectionTitle(:title="'Poster'")
     .container
       .main_wrapper
