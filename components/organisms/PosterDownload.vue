@@ -3,10 +3,10 @@
     SectionTitle(:title="'Poster'")
     .container
       .main_wrapper
-        a(href="./download/oic2020_poster.pdf" target="__blank").download_image_wrapper
+        a(href="./../download/oic2020_poster.pdf" target="__blank").download_image_wrapper
           img(src="~/assets/images/oic2020_poster.png").download_image
         .download_discription コチラのオンコンのポスターをダウンロードすることができます。
-        a.download_btn(href="./download/oic2020_poster.pdf" target="__blank") 別ページでPDFを開く
+        a.download_btn(href="./../download/oic2020_poster.pdf" target="__blank") 別ページでPDFを開く
 </template>
 <script>
 import SectionTitle from '~/components/atoms/SectionTitle.vue'
