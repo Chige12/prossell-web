@@ -50,6 +50,8 @@ export default {
   }
   .title {
     font-family: $PT-sans;
+    font-style: italic;
+    font-weight: 600;
     font-size: 6rem;
   }
 }
