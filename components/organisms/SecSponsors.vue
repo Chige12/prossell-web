@@ -83,7 +83,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .sponsors_list {
-  @include flex($wrap: wrap, $justifyContent: center);
+  @include flex($wrap: wrap, $justifyContent: center, $alignItems: flex-start);
   width: 100%;
 }
 .sponsor_box {
