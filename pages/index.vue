@@ -1,5 +1,5 @@
 <template lang="pug">
-  .index#top
+  .index
     BackgroundTriangleTop.background
     SecTopVisual.topvisual
     SecConsept
