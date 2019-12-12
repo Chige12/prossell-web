@@ -101,7 +101,9 @@ export default {
 }
 
 .sponsor_logo {
+  display: block;
   width: 100%;
+  height: 100%;
   background: $white;
   transition: 0.3s $ease-out-1;
   transform: translateY(0);

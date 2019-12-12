@@ -17,6 +17,7 @@
               .member_role(v-if="mem.role") {{mem.role}}
               img.member_icon(v-if="mem.icon" :src="require(`~/assets/member_imgs/${mem.icon}.png`)")
               .member_name {{mem.name}}
+    PosterDownload
     Footer
 </template>
 <script>
@@ -25,13 +26,15 @@ import HeaderMenu from '~/components/molecules/HeaderMenu.vue'
 import SubPageTopTitle from '~/components/atoms/SubPageTopTitle'
 import SectionTitle from '~/components/atoms/SectionTitle.vue'
 import Footer from '~/components/organisms/Footer.vue'
+import PosterDownload from '~/components/organisms/PosterDownload.vue'
 
 export default {
   components: {
     HeaderMenu,
     SubPageTopTitle,
     SectionTitle,
-    Footer
+    Footer,
+    PosterDownload
   },
   data() {
     return {
