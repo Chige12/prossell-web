@@ -3,7 +3,18 @@
     <nuxt />
   </div>
 </template>
-
+<script>
+export default {
+  mounted() {
+    this.$nextTick(() => {
+      const hash = this.$route.hash
+      if (hash && hash.match(/^#.+$/)) {
+        this.$scrollTo(hash)
+      }
+    })
+  }
+}
+</script>
 <style lang="scss">
 html {
   font-family: $noto-sans;

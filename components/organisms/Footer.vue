@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     scrollToTop() {
-      scrollTo(0, 0)
+      this.$scrollTo('#top')
     }
   }
 }
