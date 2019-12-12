@@ -8,7 +8,7 @@
     .container
       .main_wrapper
         .members_list
-          .member_wrapper(v-for="(mem,men_key) in members" :key="`men_${mem_key}`")
+          .member_wrapper(v-for="(mem,mem_key) in members" :key="`men_${mem_key}`")
             a.member_link(v-if="mem.link" :href="mem.link")
               .member_role(v-if="mem.role") {{mem.role}}
               img.member_icon(v-if="mem.icon" :src="require(`~/assets/member_imgs/${mem.icon}.png`)")
