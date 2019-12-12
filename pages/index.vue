@@ -85,4 +85,17 @@ export default {
     box-shadow: 0 0 32px 0px $white;
   }
 }
+
+@media screen and (max-width: $md) {
+  .sankaoubo_box_parent {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .sankaoubo_box_parent {
+    transform: scale(1);
+    width: 80%;
+  }
+}
 </style>
