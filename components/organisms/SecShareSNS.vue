@@ -98,7 +98,7 @@ export default {
   }
   &__links {
     margin-top: 16px;
-    @include flex($justifyContent: center);
+    @include flex($wrap: wrap, $justifyContent: center);
     .share_link {
       position: relative;
       margin: 8px;
