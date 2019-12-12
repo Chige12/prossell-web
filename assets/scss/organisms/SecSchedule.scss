@@ -15,6 +15,8 @@
   &_date {
     font-size: 2.8rem;
     font-family: $PT-sans;
+    font-style: italic;
+    font-weight: 600;
   }
 
   &_text {
@@ -52,12 +54,16 @@ $slant_2-left: calc((6 * 23px) + 32px );
   &_date{
     font-size: 4rem;
     font-family: $PT-sans;
+    font-style: italic;
+    font-weight: 600;
     flex-shrink: 0;
   }
   &_text{
     margin-left: 44px;
     font-size: 3.6rem;
     font-family: $PT-sans;
+    font-style: italic;
+    font-weight: 600;
     flex-shrink: 0;
   }
   &--final{
@@ -90,6 +96,8 @@ $slant_2-left: calc((6 * 23px) + 32px );
   &_date {
     font-size: 2.8rem;
     font-family: $PT-sans;
+    font-style: italic;
+    font-weight: 600;
     width: 148px;
   }
   &_text {

@@ -130,6 +130,8 @@ export default {
       }
       &__txt {
         font-family: $PT-sans;
+        font-style: italic;
+        font-weight: 600;
         font-size: 2.4rem;
         color: $white;
       }
