@@ -1,5 +1,5 @@
 <template lang="pug">
-  .SecShareSNS
+  .SecShareSNS#sharesns
     SectionTitle(:title="'Share SNS'")
     .container
       .main_wrapper
