@@ -54,7 +54,13 @@ export default {
           name: '株式会社 高専キャリア教育研究所'
         }
       ],
-      sponsors_B: [],
+      sponsors_B: [
+        {
+          link: 'https://sprix.jp',
+          logo: 'sprix',
+          name: '株式会社スプリックス'
+        }
+      ],
       sponsors_C: [
         {
           link: 'http://k-matsui-gumi.co.jp/',
