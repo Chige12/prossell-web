@@ -42,14 +42,26 @@ export default {
           pub: true,
           date: '2019/12/11',
           title: '参加者応募が開始されました！',
+          detaile: '同時に、新しくAboutページとNewsページを公開しました。'
+        },
+        {
+          pub: true,
+          date: '2019/12/11',
+          title: 'スポンサー企業の公開',
           detaile:
-            'スポンサー情報を更新し、新しくAboutページとNewsページを追加しました。'
+            'フラー(株)様、(株)高専キャリア教育研究所様、(株)松井組様、(株)イタチ様、CS合同会社様、日本サミコン(株)様'
         },
         {
           pub: true,
           date: '2019/12/11',
           title: '高専マガジンにご紹介いただきました！',
           link: 'http://kosen-magazine.com/about-prossell/'
+        },
+        {
+          pub: true,
+          date: '2019/12/15',
+          title: 'スポンサー企業の追加',
+          detaile: '株式会社スプリックス様'
         }
       ]
     }
