@@ -1,5 +1,5 @@
 <template lang="pug">
-  .SecVision
+  .SecVision#vision
     SectionTitle(:title="'Vision'")
     .container
       .main_wrapper

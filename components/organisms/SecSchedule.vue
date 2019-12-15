@@ -1,5 +1,5 @@
 <template lang="pug">
-  .SecSchedule
+  .SecSchedule#schedule
     SectionTitle(:title="'Schedule'")
     Slant3Svg.slant_3
     .container

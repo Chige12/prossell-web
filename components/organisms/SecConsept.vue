@@ -1,5 +1,5 @@
 <template lang="pug">
-  .SecConsept
+  .SecConsept#consept
     .container
       .consept_wrapper
         .final_pitch(v-if="$mq !== 'sm'")

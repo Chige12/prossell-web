@@ -73,6 +73,8 @@ $header-height: 80px;
     margin-right: 0px;
   }
   &_title {
+    display: block;
+    width: 100%;
     position: relative;
     font-size: 1.8rem;
     padding: 0 4px;

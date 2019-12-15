@@ -1,5 +1,5 @@
 <template lang="pug">
-  .SecAward
+  .SecAward#award
     SectionTitle(:title="'Award'")
     .container
       .award_img--sm(v-if="$mq === 'sm'")

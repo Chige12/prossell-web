@@ -1,5 +1,5 @@
 <template lang="pug">
-  .SecSponsors
+  .SecSponsors#sponsors
     SectionTitle(:title="'Sponsors'")
     .container(v-if="publish")
       .sponsors_list(v-if="sponsors_A")

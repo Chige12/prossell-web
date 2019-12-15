@@ -1,5 +1,5 @@
 <template lang="pug">
-  .SecInfomation
+  .SecInfomation#information
     SectionTitle(:title="'Information'")
     .container
       .information_lists

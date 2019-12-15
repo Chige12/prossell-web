@@ -1,5 +1,5 @@
 <template lang="pug">
-  .SecThreeFeatures
+  .SecThreeFeatures#threefeatures
     .container
       SectionTitle(:title="'ThreeFeatures'")
       .feature_content_wrapper
