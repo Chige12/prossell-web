@@ -59,6 +59,11 @@ export default {
           link: 'https://sprix.jp',
           logo: 'sprix',
           name: '株式会社スプリックス'
+        },
+        {
+          link: 'http://www.kasacon.co.jp',
+          logo: 'kasahara',
+          name: '株式会社笠原建設'
         }
       ],
       sponsors_C: [

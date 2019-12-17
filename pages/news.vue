@@ -62,6 +62,12 @@ export default {
           date: '2019/12/15',
           title: 'スポンサー企業の追加',
           detaile: '株式会社スプリックス様'
+        },
+        {
+          pub: true,
+          date: '2019/12/17',
+          title: 'スポンサー企業の追加',
+          detaile: '株式会社笠原建設'
         }
       ]
     }
