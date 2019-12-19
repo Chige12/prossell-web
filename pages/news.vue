@@ -67,7 +67,13 @@ export default {
           pub: true,
           date: '2019/12/17',
           title: 'スポンサー企業の追加',
-          detaile: '株式会社笠原建設'
+          detaile: '株式会社笠原建設様'
+        },
+        {
+          pub: true,
+          date: '2019/12/19',
+          title: 'スポンサー企業の追加',
+          detaile: '株式会社システムスクエア様'
         }
       ]
     }

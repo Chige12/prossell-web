@@ -64,6 +64,11 @@ export default {
           link: 'http://www.kasacon.co.jp',
           logo: 'kasahara',
           name: '株式会社笠原建設'
+        },
+        {
+          link: 'https://www.system-square.com/',
+          logo: 'system_square',
+          name: '株式会社システムスクエア'
         }
       ],
       sponsors_C: [
