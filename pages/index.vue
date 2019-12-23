@@ -11,6 +11,7 @@
       SecVision
     .separator
       SankaOubo.sankaoubo_box_parent
+    SecTheme
     SecAward
     SecShareSNS
     SecSponsors
@@ -29,6 +30,7 @@ import SecThreeFeatures from '~/components/organisms/SecThreeFeatures.vue'
 import SecSchedule from '~/components/organisms/SecSchedule.vue'
 import SecInformation from '~/components/organisms/SecInformation.vue'
 import SecVision from '~/components/organisms/SecVision.vue'
+import SecTheme from '~/components/organisms/SecTheme.vue'
 import SecAward from '~/components/organisms/SecAward.vue'
 import SecShareSNS from '~/components/organisms/SecShareSNS.vue'
 import SecSponsors from '~/components/organisms/SecSponsors.vue'
@@ -45,6 +47,7 @@ export default {
     SecSchedule,
     SecInformation,
     SecVision,
+    SecTheme,
     SecAward,
     SecShareSNS,
     SecSponsors,
