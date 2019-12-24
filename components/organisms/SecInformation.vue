@@ -5,7 +5,7 @@
       .information_lists
         .information_list.participate
           p.information_list_theme 参加対象者
-          p.information_list_content 大学生、大学院生、高専生、専攻科生
+          p.information_list_content 大学生、大学院生、高専生、専攻科生、専門学生、高校生
         .information_list.view
           p.information_list_theme 審査の視点
           .information_list_content
