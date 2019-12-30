@@ -74,6 +74,20 @@ export default {
           date: '2019/12/19',
           title: 'スポンサー企業の追加',
           detaile: '株式会社システムスクエア様'
+        },
+        {
+          pub: true,
+          date: '2019/12/24',
+          title: '参加対象者の表記変更',
+          link: 'https://prossell.jp/#information',
+          detaile:
+            'Twitterでいただいた質問で、高校生や専門学生でも参加できる様になりました。それに合わせて表記も修正しました。'
+        },
+        {
+          pub: true,
+          date: '2019/12/30',
+          title: 'スポンサー企業の追加',
+          detaile: '人材ニュース株式会社様'
         }
       ]
     }

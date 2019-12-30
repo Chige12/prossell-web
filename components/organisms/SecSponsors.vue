@@ -52,6 +52,11 @@ export default {
           link: 'https://kosen-career.tech/',
           logo: 'kosen_career',
           name: '株式会社 高専キャリア教育研究所'
+        },
+        {
+          link: 'https://www.jinzainews.jp',
+          logo: 'zinzai_news',
+          name: '人材ニュース株式会社'
         }
       ],
       sponsors_B: [
