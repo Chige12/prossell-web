@@ -1,13 +1,15 @@
 <template lang="pug">
   .sankaoubo_box
     nuxt-link(to="/disclaimer").application_btn
-      SankaouboSvg.sankaoubo
+      BoshushuryoSvg.sankaoubo
 </template>
 <script>
 import SankaouboSvg from '~/assets/images/sankaoubo.svg?inline'
+import BoshushuryoSvg from '~/assets/images/boshushuryo.svg?inline'
 export default {
   components: {
-    SankaouboSvg
+    SankaouboSvg,
+    BoshushuryoSvg
   }
 }
 </script>
