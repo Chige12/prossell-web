@@ -96,6 +96,11 @@ export default {
           link: 'https://www.nihon-samicon.co.jp/',
           logo: 'samicon',
           name: '日本サミコン株式会社'
+        },
+        {
+          link: 'http://www.ohara-g.co.jp/',
+          logo: 'ohara',
+          name: '大原技術株式会社'
         }
       ]
     }
