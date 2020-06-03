@@ -66,6 +66,41 @@
   animation: ScrollDown 1.8s $ease-in-out-1 infinite;
 }
 
+.next {
+  margin-right: 24px;
+  margin-top: 16px;
+  color: $dim-gray;
+  text-align: right;
+  // display: block;
+  &_event {
+    font-family: 'Noto Sans JP';
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2.4rem;
+    display: inline;
+    vertical-align: middle;
+    text-decoration: none;
+    color: $dim-gray;
+    &:hover {
+      color: $gray;
+    }
+  }
+
+  &_arrow {
+    transition: 0.3s $ease-out-1;
+    transform: translateX(0);
+    margin-left: 8px;
+    margin-right: 8px;
+    display: inline;
+    height: 18px;
+    vertical-align: middle;
+  }
+
+  &_event:hover + &_arrow {
+    transform: translateX(8px);
+  }
+}
+
 @keyframes ScrollDown {
   0% {
     transform: translateY(-30px) scaleY(0);
@@ -104,6 +139,14 @@
     }
     &_date {
       font-size: 3vw;
+    }
+  }
+  .next {
+    &_event {
+      font-size: 1.6rem;
+    }
+    &_arrow {
+      height: 12px;
     }
   }
 }
@@ -146,5 +189,8 @@
     &_date {
       font-size: 2.4rem;
     }
+  }
+  .next {
+    text-align: center;
   }
 }
